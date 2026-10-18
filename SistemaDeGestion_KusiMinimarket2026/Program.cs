@@ -1,17 +1,37 @@
+using SistemaDeGestion_KusiMinimarket2026.Clases.Autenticacion;
+using static System.Collections.Specialized.BitVector32;
+
 namespace SistemaDeGestion_KusiMinimarket2026
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmLogin());
+
+            // Ciclo: Login -> Principal -> (Cerrar sesión) -> Login ...
+            // Si el usuario cierra el Login con la X, o cierra el Principal con la X, la app termina.
+            while (true)
+            {
+                using (FrmLogin login = new FrmLogin())
+                {
+                    if (login.ShowDialog() != DialogResult.OK || login.UsuarioAutenticado == null)
+                        break;
+
+                    Sesion.Iniciar(login.UsuarioAutenticado);
+                }
+
+                using (FrmPrincipal principal = new FrmPrincipal(Sesion.Actual!))
+                {
+                    Application.Run(principal);
+
+                    if (!principal.CerrarSesionSolicitada)
+                        break;
+                }
+
+                Sesion.Cerrar();
+            }
         }
     }
 }

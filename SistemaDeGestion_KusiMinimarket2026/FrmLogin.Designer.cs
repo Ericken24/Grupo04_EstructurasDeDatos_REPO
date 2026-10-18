@@ -290,7 +290,6 @@
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kusi Minimarket || Acceso";
-            WindowState = FormWindowState.Minimized;
             Load += FrmLogin_Load;
             pnlBienvenida.ResumeLayout(false);
             tlpBienvenida.ResumeLayout(false);

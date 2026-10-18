@@ -230,11 +230,12 @@
             Controls.Add(pnlMenu);
             Controls.Add(pnlPrincipal);
             Controls.Add(pnlSuperior);
+            MaximizeBox = false;
             MinimumSize = new Size(800, 500);
             Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            WindowState = FormWindowState.Minimized;
+            Load += FrmPrincipal_Load;
             pnlSuperior.ResumeLayout(false);
             pnlSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -2,31 +2,37 @@
 using SistemaDeGestion_KusiMinimarket2026.AdmiSucRol_UC;
 using SistemaDeGestion_KusiMinimarket2026.CajeroRol_UC;
 using SistemaDeGestion_KusiMinimarket2026.Clases.Autenticacion;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 
 namespace SistemaDeGestion_KusiMinimarket2026
 {
     public partial class FrmPrincipal : Form
     {
         private readonly Usuario usuarioActual;
+
+        /// <summary>true si el usuario pulsó "Cerrar sesión" (Program.cs vuelve a mostrar el login).</summary>
+        public bool CerrarSesionSolicitada { get; private set; }
+
         public FrmPrincipal(Usuario usuario)
         {
             InitializeComponent();
             usuarioActual = usuario;
 
+            // Solo se muestran datos que ya vienen del login: no se consulta la base de datos aquí.
             lblUsuario.Text = usuarioActual.NombreCompleto;
-            lblRol.Text = usuarioActual.Rol.ToString();
+            lblRol.Text = NombreRolLegible(usuarioActual.Rol);
             lblSucursal.Text = usuarioActual.NombreSucursal;
-
+            Text = "Kusi Minimarket || " + usuarioActual.NombreSucursal;
 
             CargarMenuPorRol();
         }
+
+        private static string NombreRolLegible(RolUsuario rol) => rol switch
+        {
+            RolUsuario.Cajero => "Cajero",
+            RolUsuario.AdministradorSucursal => "Administrador de sucursal",
+            RolUsuario.AdministradorGeneral => "Administrador general",
+            _ => rol.ToString()
+        };
 
         private void CargarMenuPorRol()
         {
@@ -37,43 +43,33 @@ namespace SistemaDeGestion_KusiMinimarket2026
                 case RolUsuario.Cajero:
                     menu = new UC_CajeroMenu();
                     break;
-
                 case RolUsuario.AdministradorSucursal:
                     menu = new UC_AdminSucMenu();
                     break;
-
                 case RolUsuario.AdministradorGeneral:
                 case RolUsuario.SuperAdmin:
                     menu = new UC_AdminGenMenu();
                     break;
-
                 default:
-                    MessageBox.Show(
-                        "El rol del usuario no tiene un menú asignado.",
-                        "Acceso denegado",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
+                    MessageBox.Show("El rol del usuario no tiene un menú asignado.",
+                        "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
             }
 
             pnlMenu.Controls.Clear();
-
             menu.Dock = DockStyle.Fill;
             pnlMenu.Controls.Add(menu);
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            FrmLogin login = new FrmLogin();
+            CerrarSesionSolicitada = true;
+            Close();   // Program.cs detecta la bandera y abre el login otra vez
+        }
 
-            login.StartPosition = FormStartPosition.CenterScreen;
-            login.WindowState = FormWindowState.Minimized;
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
 
-            login.Show();
-            login.Activate();
-            login.BringToFront();
-
-            this.Hide();
         }
     }
 }

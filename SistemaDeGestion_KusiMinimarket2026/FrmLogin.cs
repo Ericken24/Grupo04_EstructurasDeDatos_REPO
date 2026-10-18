@@ -1,88 +1,76 @@
 using Microsoft.Data.SqlClient;
 using SistemaDeGestion_KusiMinimarket2026.Clases.Autenticacion;
-using SistemaDeGestion_KusiMinimarket2026.Datos_SQLServer;
 
 namespace SistemaDeGestion_KusiMinimarket2026
 {
     public partial class FrmLogin : Form
     {
+        private readonly AutenticacionService servicio = new AutenticacionService();
+
+        /// <summary>Usuario validado. Program.cs lo lee cuando este formulario se cierra con DialogResult.OK.</summary>
+        public Usuario? UsuarioAutenticado { get; private set; }
+
         public FrmLogin()
         {
             InitializeComponent();
+            AcceptButton = btnIniciarSesion;        // Enter = Ingresar
+            txtContraseña.UseSystemPasswordChar = true;   // oculta la clave con puntos
         }
 
+        // Se mantiene porque el Designer lo tiene enlazado (Load += FrmLogin_Load)
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            /** este bloques de try y catch es para probar la conexión con la base de datos, se puede eliminar si no se desea probar la conexión
-            try
-            {
-                Conexion conexion = new Conexion();
-
-                using (SqlConnection cn = conexion.ObtenerConexion())
-                {
-                    cn.Open();
-
-                    MessageBox.Show(
-                        "conexión exitosa con kusiminimarket",
-                        "conexión",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                    );
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    "no se pudo conectar: " + ex.Message,
-                    "error de conexión",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }**/
+            txtUsuario.Focus();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            string usuarioIngresado = txtUsuario.Text;
-            string claveIngresada = txtContraseña.Text;
+            ResultadoLogin resultado;
+            Usuario? usuario;
 
             try
             {
-                AutenticacionService servicio = new AutenticacionService();
-
-                Usuario? usuario = servicio.IniciarSesion(
-                    usuarioIngresado, claveIngresada);
-
-                if (usuario == null)
-                {
-                    MessageBox.Show(
-                        "Usuario o contraseña incorrectos, o cuenta inactiva.",
-                        "Inicio de sesión",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-
-                    return;
-                }
-
-                FrmPrincipal principal = new FrmPrincipal(usuario);
-
-                principal.StartPosition = FormStartPosition.CenterScreen;
-                principal.WindowState = FormWindowState.Minimized;
-
-                principal.Show();
-                principal.Activate();
-                principal.BringToFront();
-
-                this.Hide();
+                resultado = servicio.IniciarSesion(txtUsuario.Text, txtContraseña.Text, out usuario);
             }
-            catch (Exception)
+            catch (SqlException ex)
             {
                 MessageBox.Show(
-                    "No se pudo completar el inicio de sesión. Verifica la conexión con la base de datos.",
-                    "Error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                    "No se pudo conectar con la base de datos.\n\nDetalle técnico: " + ex.Message,
+                    "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
+            switch (resultado)
+            {
+                case ResultadoLogin.Ok:
+                    UsuarioAutenticado = usuario;
+                    txtContraseña.Clear();
+                    DialogResult = DialogResult.OK;   // cierra el login y devuelve el control a Program.cs
+                    break;
+
+                case ResultadoLogin.Bloqueado:
+                    Aviso("Cuenta bloqueada por intentos fallidos. Intenta de nuevo en 15 minutos.");
+                    break;
+
+                case ResultadoLogin.Inactivo:
+                    Aviso("Tu usuario está desactivado. Contacta al administrador.");
+                    break;
+
+                case ResultadoLogin.CuentaIncompleta:
+                    Aviso("Tu cuenta no tiene rol o sucursal válidos. Contacta al administrador.");
+                    break;
+
+                default:
+                    Aviso("Usuario o contraseña incorrectos.");
+                    break;
+            }
+        }
+
+        private void Aviso(string mensaje)
+        {
+            MessageBox.Show(mensaje, "Inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtContraseña.Clear();
+            txtContraseña.Focus();
         }
     }
 }
