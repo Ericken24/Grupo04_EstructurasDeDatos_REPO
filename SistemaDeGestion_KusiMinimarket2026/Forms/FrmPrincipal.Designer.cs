@@ -87,46 +87,48 @@
             lblHora.AutoSize = true;
             lblHora.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHora.ForeColor = Color.White;
-            lblHora.Location = new Point(990, 32);
+            lblHora.Location = new Point(984, 32);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(19, 20);
             lblHora.TabIndex = 13;
             lblHora.Text = "X";
+            lblHora.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblFecha
             // 
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblFecha.ForeColor = Color.White;
-            lblFecha.Location = new Point(887, 32);
+            lblFecha.Location = new Point(881, 32);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(19, 20);
             lblFecha.TabIndex = 12;
             lblFecha.Text = "X";
+            lblFecha.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblSucursal
             // 
-            lblSucursal.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblSucursal.AutoSize = true;
             lblSucursal.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSucursal.ForeColor = Color.White;
-            lblSucursal.Location = new Point(791, 45);
+            lblSucursal.Location = new Point(742, 45);
             lblSucursal.Name = "lblSucursal";
             lblSucursal.Size = new Size(19, 20);
             lblSucursal.TabIndex = 11;
             lblSucursal.Text = "X";
+            lblSucursal.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblRol
             // 
-            lblRol.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblRol.AutoSize = true;
             lblRol.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblRol.ForeColor = Color.White;
-            lblRol.Location = new Point(646, 46);
+            lblRol.Location = new Point(557, 46);
             lblRol.Name = "lblRol";
             lblRol.Size = new Size(19, 20);
             lblRol.TabIndex = 10;
             lblRol.Text = "X";
+            lblRol.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblUsuario
             // 
@@ -134,18 +136,19 @@
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblUsuario.ForeColor = Color.White;
-            lblUsuario.Location = new Point(510, 45);
+            lblUsuario.Location = new Point(384, 45);
             lblUsuario.Name = "lblUsuario";
             lblUsuario.Size = new Size(19, 20);
             lblUsuario.TabIndex = 9;
             lblUsuario.Text = "X";
+            lblUsuario.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEncabezado3
             // 
             lblEncabezado3.AutoSize = true;
             lblEncabezado3.Font = new Font("Ubuntu", 9.749999F, FontStyle.Bold);
             lblEncabezado3.ForeColor = Color.Silver;
-            lblEncabezado3.Location = new Point(761, 21);
+            lblEncabezado3.Location = new Point(712, 21);
             lblEncabezado3.Name = "lblEncabezado3";
             lblEncabezado3.Size = new Size(81, 17);
             lblEncabezado3.TabIndex = 8;
@@ -156,7 +159,7 @@
             lblEncabezado2.AutoSize = true;
             lblEncabezado2.Font = new Font("Ubuntu", 9.749999F, FontStyle.Bold);
             lblEncabezado2.ForeColor = Color.Silver;
-            lblEncabezado2.Location = new Point(639, 21);
+            lblEncabezado2.Location = new Point(550, 21);
             lblEncabezado2.Name = "lblEncabezado2";
             lblEncabezado2.Size = new Size(36, 17);
             lblEncabezado2.TabIndex = 7;
@@ -167,7 +170,7 @@
             lblEncabezado1.AutoSize = true;
             lblEncabezado1.Font = new Font("Ubuntu", 9.749999F, FontStyle.Bold);
             lblEncabezado1.ForeColor = Color.Silver;
-            lblEncabezado1.Location = new Point(483, 21);
+            lblEncabezado1.Location = new Point(357, 21);
             lblEncabezado1.Name = "lblEncabezado1";
             lblEncabezado1.Size = new Size(70, 17);
             lblEncabezado1.TabIndex = 6;

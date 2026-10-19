@@ -1,111 +1,66 @@
-﻿using System.Data;
-using Microsoft.Data.SqlClient;
-using SistemaDeGestion_KusiMinimarket2026.Datos_SQLServer;
-
-namespace SistemaDeGestion_KusiMinimarket2026.Clases.Autenticacion
+﻿namespace SistemaDeGestion_KusiMinimarket2026.Clases.Autenticacion
 {
-    public enum ResultadoLogin
-    {
-        Ok,
-        CredencialesInvalidas,
-        Bloqueado,
-        Inactivo,
-        CuentaIncompleta   // rol desconocido o usuario sin sucursal asignada
-    }
-
+    /// <summary>
+    /// Autenticación local para la demo: sin base de datos, funciona en cualquier laptop.
+    /// Las cuentas viven en esta lista. Más adelante se puede reemplazar por una base de datos
+    /// o un archivo sin cambiar FrmLogin, porque solo depende del método IniciarSesion.
+    /// </summary>
     public class AutenticacionService
     {
-        private readonly Conexion conexion = new Conexion();
+        // Cuenta = datos de acceso + datos del usuario que se proyectan en FrmPrincipal
+        private record Cuenta(string NombreUsuario, string Correo, string Clave, Usuario Datos); //record es como una clase pero inmutable y con igualdad por valor
 
-        /// <summary>Inicia sesión con nombre de usuario O correo. Es la ÚNICA consulta a la base en todo el flujo de acceso.</summary>
-        public ResultadoLogin IniciarSesion(string login, string clave, out Usuario? usuario)
+        private static int siguienteId = 1;   // debe ir ANTES de la lista (orden de inicialización)
+
+        private static readonly List<Cuenta> cuentas = // lista de cuentas de prueba, sin base de datos
+        [
+            Crear("admin.general", "Admin123", "Juan Perez",
+                  RolUsuario.AdministradorGeneral, 8, "ADM-01", "Sede administrativa Kusi"),
+
+            Crear("admin.centro", "Centro123", "Erick Encarnación",
+                  RolUsuario.AdministradorSucursal, 1, "SUC-01", "Kusi Centro"),
+            Crear("admin.norte", "Norte123", "Flor Becerra",
+                  RolUsuario.AdministradorSucursal, 2, "SUC-02", "Kusi Norte"),
+
+            Crear("cajero.centro1", "Cajero123", "Alexis Sanchéz",
+                  RolUsuario.Cajero, 1, "SUC-01", "Kusi Centro"),
+            Crear("cajero.norte1", "Cajero123", "Tatiana Mendoza",
+                  RolUsuario.Cajero, 2, "SUC-02", "Kusi Norte"),
+        ];
+
+        private static Cuenta Crear(string usuario, string clave, string nombre, RolUsuario rol,        // crea un usuario de prueba y lo agrega a la lista
+                                    int sucursalId, string codigoSucursal, string nombreSucursal)
         {
-            usuario = null;
-
-            if (string.IsNullOrWhiteSpace(login) || string.IsNullOrEmpty(clave))
-                return ResultadoLogin.CredencialesInvalidas;
-
-            using SqlConnection cn = conexion.ObtenerConexion();
-            cn.Open();
-
-            Usuario candidato;
-            byte[] hash, sal;
-            string algoritmo;
-            int? iteraciones;
-            bool activo;
-            DateTime? bloqueadoHasta;
-            string nombreRol;
-
-            using (SqlCommand cmd = new SqlCommand("kusi.usp_ObtenerUsuarioLogin", cn))
+            Usuario datos = new Usuario
             {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@Login", SqlDbType.NVarChar, 254).Value = login.Trim();
-
-                using SqlDataReader r = cmd.ExecuteReader();
-                if (!r.Read())
-                    return ResultadoLogin.CredencialesInvalidas;
-
-                nombreRol = r.GetString(r.GetOrdinal("Rol"));
-                int colSucursal = r.GetOrdinal("SucursalId");
-
-                candidato = new Usuario
-                {
-                    UsuarioId = r.GetInt32(r.GetOrdinal("UsuarioId")),
-                    NombreCompleto = r.GetString(r.GetOrdinal("NombreCompleto")),
-                    NombreUsuario = r.GetString(r.GetOrdinal("NombreUsuario")),
-                    SucursalId = r.IsDBNull(colSucursal) ? null : r.GetInt32(colSucursal),
-                    NombreSucursal = r.IsDBNull(r.GetOrdinal("Sucursal")) ? "" : r.GetString(r.GetOrdinal("Sucursal")),
-                    CodigoSucursal = r.IsDBNull(r.GetOrdinal("CodigoSucursal")) ? "" : r.GetString(r.GetOrdinal("CodigoSucursal")),
-                    DebeCambiarClave = r.GetBoolean(r.GetOrdinal("DebeCambiarClave"))
-                };
-
-                hash = (byte[])r["PasswordHash"];
-                sal = (byte[])r["PasswordSalt"];
-                algoritmo = r.GetString(r.GetOrdinal("AlgoritmoHash"));
-                int colIter = r.GetOrdinal("Iteraciones");
-                iteraciones = r.IsDBNull(colIter) ? null : r.GetInt32(colIter);
-                activo = r.GetBoolean(r.GetOrdinal("Activo"));
-                int colBloq = r.GetOrdinal("BloqueadoHasta");
-                bloqueadoHasta = r.IsDBNull(colBloq) ? null : r.GetDateTime(colBloq);
-            }   // el reader se cierra aquí, antes de ejecutar otros comandos
-
-            if (bloqueadoHasta.HasValue && bloqueadoHasta.Value > DateTime.Now)
-                return ResultadoLogin.Bloqueado;
-
-            if (!HashClave.Verificar(clave, hash, sal, algoritmo, iteraciones))
-            {
-                EjecutarSp(cn, "kusi.usp_RegistrarLoginFallido", candidato.UsuarioId);
-                return ResultadoLogin.CredencialesInvalidas;
-            }
-
-            if (!activo)
-                return ResultadoLogin.Inactivo;
-
-            RolUsuario? rol = ConvertirRol(nombreRol);
-            if (rol == null || candidato.SucursalId == null)
-                return ResultadoLogin.CuentaIncompleta;
-
-            candidato.Rol = rol.Value;
-            EjecutarSp(cn, "kusi.usp_RegistrarLoginExitoso", candidato.UsuarioId);
-
-            usuario = candidato;
-            return ResultadoLogin.Ok;
+                UsuarioId = siguienteId++,
+                NombreCompleto = nombre,
+                NombreUsuario = usuario,
+                Rol = rol,
+                SucursalId = sucursalId,
+                CodigoSucursal = codigoSucursal,
+                NombreSucursal = nombreSucursal,
+                DebeCambiarClave = false
+            };
+            return new Cuenta(usuario, usuario + "@kusi.example", clave, datos);
         }
 
-        private static RolUsuario? ConvertirRol(string nombre) => nombre switch
+        /// <summary>Acepta usuario o correo (sin distinguir mayúsculas). Devuelve null si no coincide.</summary>
+        public Usuario?IniciarSesion(string login, string clave) // login puede ser nombre de usuario o correo, ?: permite que el método devuelva null si no se encuentra la cuenta
         {
-            "CAJERO" => RolUsuario.Cajero,
-            "ADMIN_SUCURSAL" => RolUsuario.AdministradorSucursal,
-            "ADMIN_GENERAL" => RolUsuario.AdministradorGeneral,
-            _ => null
-        };
+            if (string.IsNullOrWhiteSpace(login) || string.IsNullOrEmpty(clave))
+                return null;
 
-        private static void EjecutarSp(SqlConnection cn, string procedimiento, int usuarioId)
-        {
-            using SqlCommand cmd = new SqlCommand(procedimiento, cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@UsuarioId", SqlDbType.Int).Value = usuarioId;
-            cmd.ExecuteNonQuery();
+            string buscado = login.Trim();
+
+            Cuenta? cuenta = cuentas.FirstOrDefault(c =>                  // busca por nombre de usuario o correo, sin distinguir mayúsculas, el simbolo ? permite que c sea null y no lance excepción
+                c.NombreUsuario.Equals(buscado, StringComparison.OrdinalIgnoreCase) ||
+                c.Correo.Equals(buscado, StringComparison.OrdinalIgnoreCase));
+
+            if (cuenta == null || cuenta.Clave != clave)
+                return null;
+
+            return cuenta.Datos;
         }
     }
 }

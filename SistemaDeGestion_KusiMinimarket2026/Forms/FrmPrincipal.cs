@@ -7,17 +7,17 @@ namespace SistemaDeGestion_KusiMinimarket2026
 {
     public partial class FrmPrincipal : Form
     {
-        private readonly Usuario usuarioActual;
+        private readonly Usuario usuarioActual; // Usuario que inició sesión y se pasa desde FrmLogin.cs
 
         /// <summary>true si el usuario pulsó "Cerrar sesión" (Program.cs vuelve a mostrar el login).</summary>
-        public bool CerrarSesionSolicitada { get; private set; }
+        public bool CerrarSesionSolicitada { get; private set; } // Program.cs detecta botón cerrar sesión y abre el login otra vez
 
         public FrmPrincipal(Usuario usuario)
         {
             InitializeComponent();
             usuarioActual = usuario;
 
-            // Solo se muestran datos que ya vienen del login: no se consulta la base de datos aquí.
+            // Solo se muestran datos que ya vienen del login
             lblUsuario.Text = usuarioActual.NombreCompleto;
             lblRol.Text = NombreRolLegible(usuarioActual.Rol);
             lblSucursal.Text = usuarioActual.NombreSucursal;
@@ -26,7 +26,7 @@ namespace SistemaDeGestion_KusiMinimarket2026
             CargarMenuPorRol();
         }
 
-        private static string NombreRolLegible(RolUsuario rol) => rol switch
+        private static string NombreRolLegible(RolUsuario rol) => rol switch // Convierte el enum RolUsuario a un nombre legible para mostrar en la interfaz
         {
             RolUsuario.Cajero => "Cajero",
             RolUsuario.AdministradorSucursal => "Administrador de sucursal",
@@ -64,7 +64,7 @@ namespace SistemaDeGestion_KusiMinimarket2026
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             CerrarSesionSolicitada = true;
-            Close();   // Program.cs detecta la bandera y abre el login otra vez
+            Close();   // Program.cs detecta click en el botón cerrar sesión y abre el login otra vez
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
