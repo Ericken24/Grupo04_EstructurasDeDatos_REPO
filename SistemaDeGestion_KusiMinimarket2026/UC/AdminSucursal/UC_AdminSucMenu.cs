@@ -22,7 +22,6 @@ namespace SistemaDeGestion_KusiMinimarket2026.AdmiSucRol_UC
             };
             foreach (Button boton in modulos.Keys) boton.Click += (s, e) => Abrir((Button)s!);
 
-            Load += (s, e) => { if (!DesignMode) Abrir(btnResumen); };   // al entrar se muestra el Resumen
         }
 
         private void Abrir(Button boton)
