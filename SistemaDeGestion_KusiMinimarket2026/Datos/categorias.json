@@ -1,0 +1,92 @@
+[
+  {
+    "CategoriaId": 1,
+    "Nombre": "Abarrotes",
+    "Descripcion": "Despensa: arroz, aceite, fideos, conservas, menestras, café e infusiones envasadas",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 2,
+    "Nombre": "Bebidas",
+    "Descripcion": "Gaseosas, agua, jugos, isotónicos y energizantes",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 3,
+    "Nombre": "Bebidas alcohólicas",
+    "Descripcion": "Cerveza, pisco, vino y destilados (venta solo a mayores de 18 años)",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 4,
+    "Nombre": "Lácteos y embutidos",
+    "Descripcion": "Leche, yogur, queso, mantequilla y fiambres",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 5,
+    "Nombre": "Galletas",
+    "Descripcion": "Galletas dulces y saladas",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 6,
+    "Nombre": "Snacks salados",
+    "Descripcion": "Papitas, piqueos, maní y chifles",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 7,
+    "Nombre": "Golosinas y chocolates",
+    "Descripcion": "Chocolates, caramelos, chicles y gomitas",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 8,
+    "Nombre": "Cafetería",
+    "Descripcion": "Café y bebidas calientes preparadas al momento",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 9,
+    "Nombre": "Comida preparada",
+    "Descripcion": "Menú del día, platos, sándwiches y jugos naturales",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 10,
+    "Nombre": "Panadería y pastelería",
+    "Descripcion": "Panes, tortas y bocadillos horneados",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 11,
+    "Nombre": "Frutas y verduras",
+    "Descripcion": "Productos frescos",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 12,
+    "Nombre": "Congelados",
+    "Descripcion": "Productos congelados y hielo",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 13,
+    "Nombre": "Limpieza",
+    "Descripcion": "Productos de limpieza del hogar",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 14,
+    "Nombre": "Cuidado personal",
+    "Descripcion": "Higiene y cuidado personal",
+    "Activa": true
+  },
+  {
+    "CategoriaId": 15,
+    "Nombre": "Otros",
+    "Descripcion": "Pilas, encendedores y artículos varios",
+    "Activa": true
+  }
+]

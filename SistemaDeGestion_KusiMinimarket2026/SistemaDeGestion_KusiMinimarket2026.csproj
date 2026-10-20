@@ -24,7 +24,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Datos\" />
     <Folder Include="Recursos\" />
   </ItemGroup>
 
+    <ItemGroup>
+	    <None Update="Datos\**\*.json">
+		    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    </None>
+    </ItemGroup>
 </Project>

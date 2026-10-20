@@ -1,0 +1,32 @@
+[
+  {
+    "MetodoPagoId": 1,
+    "Nombre": "Efectivo",
+    "RequiereReferencia": false
+  },
+  {
+    "MetodoPagoId": 2,
+    "Nombre": "Yape",
+    "RequiereReferencia": true
+  },
+  {
+    "MetodoPagoId": 3,
+    "Nombre": "Plin",
+    "RequiereReferencia": true
+  },
+  {
+    "MetodoPagoId": 4,
+    "Nombre": "Tarjeta de débito",
+    "RequiereReferencia": true
+  },
+  {
+    "MetodoPagoId": 5,
+    "Nombre": "Tarjeta de crédito",
+    "RequiereReferencia": true
+  },
+  {
+    "MetodoPagoId": 6,
+    "Nombre": "Transferencia",
+    "RequiereReferencia": true
+  }
+]

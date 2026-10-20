@@ -1,0 +1,6337 @@
+[
+  {
+    "SucursalId": 1,
+    "ProductoId": 1,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 2,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 3,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 4,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 5,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 6,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 7,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 8,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 9,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 10,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 11,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 12,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 13,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 14,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 15,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 16,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 17,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 18,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 19,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 20,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 21,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 22,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 23,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 24,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 25,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 26,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 27,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 28,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 29,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 30,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 31,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 32,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 33,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 34,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 35,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 36,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 37,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 38,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 39,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 40,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 41,
+    "StockActual": 144.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 42,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 43,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 44,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 45,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 46,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 47,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 48,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 49,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 50,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 51,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 52,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 53,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 54,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 55,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 56,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 57,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 58,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 59,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 60,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 61,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 62,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 63,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 64,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 65,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 66,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 67,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 68,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 69,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 70,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 71,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 72,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 73,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 74,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 75,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 76,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 77,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 78,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 79,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 80,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 81,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 82,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 83,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 84,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 85,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 86,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 87,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 88,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 89,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 90,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 91,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 92,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 93,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 94,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 95,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 96,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 97,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 98,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 99,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 100,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 101,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 102,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 103,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 104,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 105,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 106,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 107,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 108,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 109,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 110,
+    "StockActual": 250.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 162,
+    "StockActual": 300.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 163,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 164,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 165,
+    "StockActual": 160.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 166,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 167,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 168,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 169,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 170,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 171,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 172,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 173,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 174,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 175,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 176,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 177,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 178,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 179,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 180,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 181,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 182,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 183,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 184,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 185,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 186,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 187,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 188,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 189,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 190,
+    "StockActual": 75.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 191,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 192,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 193,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 194,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 195,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 196,
+    "StockActual": 45.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 197,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 198,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 199,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 200,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 201,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 202,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 203,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 204,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 205,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 206,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 207,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 208,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 209,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 210,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 211,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 212,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 213,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 214,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 215,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 216,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 217,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 218,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 219,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 220,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 221,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 222,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 223,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 224,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 225,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 226,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 227,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 228,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 229,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 230,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 231,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 1,
+    "ProductoId": 232,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 1,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 2,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 3,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 4,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 5,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 6,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 7,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 8,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 9,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 10,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 11,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 12,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 13,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 14,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 15,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 16,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 17,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 18,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 19,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 20,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 21,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 22,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 23,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 24,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 25,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 26,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 27,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 28,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 29,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 30,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 31,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 32,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 33,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 34,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 35,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 36,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 37,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 38,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 39,
+    "StockActual": 108.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 40,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 41,
+    "StockActual": 180.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 42,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 43,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 44,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 45,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 46,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 47,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 48,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 49,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 50,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 51,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 52,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 53,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 54,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 55,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 56,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 57,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 58,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 59,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 60,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 61,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 62,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 63,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 64,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 65,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 66,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 67,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 68,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 69,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 70,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 71,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 72,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 73,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 74,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 75,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 76,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 77,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 78,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 79,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 80,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 81,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 82,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 83,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 84,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 85,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 86,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 87,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 88,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 89,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 90,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 91,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 92,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 93,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 94,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 95,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 96,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 97,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 98,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 99,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 100,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 101,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 102,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 103,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 104,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 105,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 106,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 107,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 108,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 109,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 110,
+    "StockActual": 100.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 162,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 163,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 164,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 165,
+    "StockActual": 200.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 166,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 167,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 168,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 169,
+    "StockActual": 75.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 170,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 171,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 172,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 173,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 174,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 175,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 176,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 177,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 178,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 179,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 180,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 181,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 182,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 183,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 184,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 185,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 186,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 187,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 188,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 189,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 190,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 191,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 192,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 193,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 194,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 195,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 196,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 197,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 198,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 199,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 200,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 201,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 202,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 203,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 204,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 205,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 206,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 207,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 208,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 209,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 210,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 211,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 212,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 213,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 214,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 215,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 216,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 217,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 218,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 219,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 220,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 221,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 222,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 223,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 224,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 225,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 226,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 227,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 228,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 229,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 230,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 231,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 2,
+    "ProductoId": 232,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 1,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 2,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 3,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 4,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 5,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 6,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 7,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 8,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 9,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 10,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 11,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 12,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 13,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 14,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 15,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 16,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 17,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 18,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 19,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 20,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 21,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 22,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 23,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 24,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 25,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 26,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 27,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 28,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 29,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 30,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 31,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 32,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 33,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 34,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 35,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 36,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 37,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 38,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 39,
+    "StockActual": 144.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 40,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 41,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 42,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 43,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 44,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 45,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 46,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 47,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 48,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 49,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 50,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 51,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 52,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 53,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 54,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 55,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 56,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 57,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 58,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 59,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 60,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 61,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 62,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 63,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 64,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 65,
+    "StockActual": 4.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 66,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 67,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 68,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 69,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 70,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 71,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 72,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 73,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 74,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 75,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 76,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 77,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 78,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 79,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 80,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 81,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 82,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 83,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 84,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 85,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 86,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 87,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 88,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 89,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 90,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 91,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 92,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 93,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 94,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 95,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 96,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 97,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 98,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 99,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 100,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 101,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 102,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 103,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 104,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 105,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 106,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 107,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 108,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 109,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 110,
+    "StockActual": 150.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 162,
+    "StockActual": 180.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 163,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 164,
+    "StockActual": 150.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 165,
+    "StockActual": 80.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 166,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 167,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 168,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 169,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 170,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 171,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 172,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 173,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 174,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 175,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 176,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 177,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 178,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 179,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 180,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 181,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 182,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 183,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 184,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 185,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 186,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 187,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 188,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 189,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 190,
+    "StockActual": 45.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 191,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 192,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 193,
+    "StockActual": 4.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 194,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 195,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 196,
+    "StockActual": 75.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 197,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 198,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 199,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 200,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 201,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 202,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 203,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 204,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 205,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 206,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 207,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 208,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 209,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 210,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 211,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 212,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 213,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 214,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 215,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 216,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 217,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 218,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 219,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 220,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 221,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 222,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 223,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 224,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 225,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 226,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 227,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 228,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 229,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 230,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 231,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 3,
+    "ProductoId": 232,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 1,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 2,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 3,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 4,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 5,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 6,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 7,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 8,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 9,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 10,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 11,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 12,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 13,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 14,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 15,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 16,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 17,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 18,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 19,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 20,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 21,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 22,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 23,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 24,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 25,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 26,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 27,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 28,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 29,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 30,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 31,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 32,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 33,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 34,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 35,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 36,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 37,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 38,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 39,
+    "StockActual": 180.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 40,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 41,
+    "StockActual": 108.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 42,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 43,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 44,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 45,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 46,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 47,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 48,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 49,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 50,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 51,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 52,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 53,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 54,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 55,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 56,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 57,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 58,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 59,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 60,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 61,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 62,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 63,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 64,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 65,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 66,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 67,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 68,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 69,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 70,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 71,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 72,
+    "StockActual": 4.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 73,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 74,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 75,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 76,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 77,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 78,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 79,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 80,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 81,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 82,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 83,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 84,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 85,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 86,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 87,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 88,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 89,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 90,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 91,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 92,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 93,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 94,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 95,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 96,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 97,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 98,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 99,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 100,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 101,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 102,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 103,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 104,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 105,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 106,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 107,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 108,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 109,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 110,
+    "StockActual": 200.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 162,
+    "StockActual": 240.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 163,
+    "StockActual": 150.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 164,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 165,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 166,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 167,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 168,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 169,
+    "StockActual": 45.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 170,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 171,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 172,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 173,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 174,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 175,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 176,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 177,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 178,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 179,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 180,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 181,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 182,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 183,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 184,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 185,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 186,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 187,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 188,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 189,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 190,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 191,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 192,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 193,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 194,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 195,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 196,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 197,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 198,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 199,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 200,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 201,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 202,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 203,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 204,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 205,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 206,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 207,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 208,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 209,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 210,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 211,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 212,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 213,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 214,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 215,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 216,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 217,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 218,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 219,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 220,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 221,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 222,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 223,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 224,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 225,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 226,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 227,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 228,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 229,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 230,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 231,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 4,
+    "ProductoId": 232,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 1,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 2,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 3,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 4,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 5,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 6,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 7,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 8,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 9,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 10,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 11,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 12,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 13,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 14,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 15,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 16,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 17,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 18,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 19,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 20,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 21,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 22,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 23,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 24,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 25,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 26,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 27,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 28,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 29,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 30,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 31,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 32,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 33,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 34,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 35,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 36,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 37,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 38,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 39,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 40,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 41,
+    "StockActual": 144.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 42,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 43,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 44,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 45,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 46,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 47,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 48,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 49,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 50,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 51,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 52,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 53,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 54,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 55,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 56,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 57,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 58,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 59,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 60,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 61,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 62,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 63,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 64,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 65,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 66,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 67,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 68,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 69,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 70,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 71,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 72,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 73,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 74,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 75,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 76,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 77,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 78,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 79,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 80,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 81,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 82,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 83,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 84,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 85,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 86,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 87,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 88,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 89,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 90,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 91,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 92,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 93,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 94,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 95,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 96,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 97,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 98,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 99,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 100,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 101,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 102,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 103,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 104,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 105,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 106,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 107,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 108,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 109,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 110,
+    "StockActual": 250.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 162,
+    "StockActual": 300.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 163,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 164,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 165,
+    "StockActual": 160.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 166,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 167,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 168,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 169,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 170,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 171,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 172,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 173,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 174,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 175,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 176,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 177,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 178,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 179,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 180,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 181,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 182,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 183,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 184,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 185,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 186,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 187,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 188,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 189,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 190,
+    "StockActual": 75.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 191,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 192,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 193,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 194,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 195,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 196,
+    "StockActual": 45.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 197,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 198,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 199,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 200,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 201,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 202,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 203,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 204,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 205,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 206,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 207,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 208,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 209,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 210,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 211,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 212,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 213,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 214,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 215,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 216,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 217,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 218,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 219,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 220,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 221,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 222,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 223,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 224,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 225,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 226,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 227,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 228,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 229,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 230,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 231,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 5,
+    "ProductoId": 232,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 1,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 2,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 3,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 4,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 5,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 6,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 7,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 8,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 9,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 10,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 11,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 12,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 13,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 14,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 15,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 16,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 17,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 18,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 19,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 20,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 21,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 22,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 23,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 24,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 25,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 26,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 27,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 28,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 29,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 30,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 31,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 32,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 33,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 34,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 35,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 36,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 37,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 38,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 39,
+    "StockActual": 108.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 40,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 41,
+    "StockActual": 180.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 42,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 43,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 44,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 45,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 46,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 47,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 48,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 49,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 50,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 51,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 52,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 53,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 54,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 55,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 56,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 57,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 58,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 59,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 60,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 61,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 62,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 63,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 64,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 65,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 66,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 67,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 68,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 69,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 70,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 71,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 72,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 73,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 74,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 75,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 76,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 77,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 78,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 79,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 80,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 81,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 82,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 83,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 84,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 85,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 86,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 87,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 88,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 89,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 90,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 91,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 92,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 93,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 94,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 95,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 96,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 97,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 98,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 99,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 100,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 101,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 102,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 103,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 104,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 105,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 106,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 107,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 108,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 109,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 110,
+    "StockActual": 100.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 162,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 163,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 164,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 165,
+    "StockActual": 200.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 166,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 167,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 168,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 169,
+    "StockActual": 75.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 170,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 171,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 172,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 173,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 174,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 175,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 176,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 177,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 178,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 179,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 180,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 181,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 182,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 183,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 184,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 185,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 186,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 187,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 188,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 189,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 190,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 191,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 192,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 193,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 194,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 195,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 196,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 197,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 198,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 199,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 200,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 201,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 202,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 203,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 204,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 205,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 206,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 207,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 208,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 209,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 210,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 211,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 212,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 213,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 214,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 215,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 216,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 217,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 218,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 219,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 220,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 221,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 222,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 223,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 224,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 225,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 226,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 227,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 228,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 229,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 230,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 231,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 6,
+    "ProductoId": 232,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 1,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 2,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 3,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 4,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 5,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 6,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 7,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 8,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 9,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 10,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 11,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 12,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 13,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 14,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 15,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 16,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 17,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 18,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 19,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 20,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 21,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 22,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 23,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 24,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 25,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 26,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 27,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 28,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 29,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 30,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 31,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 32,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 33,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 34,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 35,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 36,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 37,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 38,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 39,
+    "StockActual": 144.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 40,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 41,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 42,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 43,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 44,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 45,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 46,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 47,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 48,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 49,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 50,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 51,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 52,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 53,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 54,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 55,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 56,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 57,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 58,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 59,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 60,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 61,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 62,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 63,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 64,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 65,
+    "StockActual": 4.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 66,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 67,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 68,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 69,
+    "StockActual": 8.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 70,
+    "StockActual": 9.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 71,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 72,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 73,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 74,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 75,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 76,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 77,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 78,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 79,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 80,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 81,
+    "StockActual": 6.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 82,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 83,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 84,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 85,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 86,
+    "StockActual": 54.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 87,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 88,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 89,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 90,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 91,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 92,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 93,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 94,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 95,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 96,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 97,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 98,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 99,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 100,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 101,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 102,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 103,
+    "StockActual": 72.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 104,
+    "StockActual": 90.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 105,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 106,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 107,
+    "StockActual": 96.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 108,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 109,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 110,
+    "StockActual": 150.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 162,
+    "StockActual": 180.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 163,
+    "StockActual": 120.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 164,
+    "StockActual": 150.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 165,
+    "StockActual": 80.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 166,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 167,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 168,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 169,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 170,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 171,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 172,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 173,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 174,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 175,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 176,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 177,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 178,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 179,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 180,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 181,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 182,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 183,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 184,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 185,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 186,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 187,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 188,
+    "StockActual": 50.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 189,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 190,
+    "StockActual": 45.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 191,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 192,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 193,
+    "StockActual": 4.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 194,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 195,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 196,
+    "StockActual": 75.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 197,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 198,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 199,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 200,
+    "StockActual": 25.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 201,
+    "StockActual": 10.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 202,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 203,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 204,
+    "StockActual": 60.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 205,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 206,
+    "StockActual": 15.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 207,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 208,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 209,
+    "StockActual": 12.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 210,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 211,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 212,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 213,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 214,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 215,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 216,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 217,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 218,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 219,
+    "StockActual": 48.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 220,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 221,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 222,
+    "StockActual": 30.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 223,
+    "StockActual": 20.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 224,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 225,
+    "StockActual": 16.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 226,
+    "StockActual": 18.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 227,
+    "StockActual": 32.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 228,
+    "StockActual": 40.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 229,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 230,
+    "StockActual": 36.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 231,
+    "StockActual": 24.0
+  },
+  {
+    "SucursalId": 7,
+    "ProductoId": 232,
+    "StockActual": 60.0
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ProveedorId": 1,
+    "RazonSocial": "Mayorista de Abarrotes Cajamarca",
+    "Ruc": null,
+    "Activo": true
+  },
+  {
+    "ProveedorId": 2,
+    "RazonSocial": "Distribuidora de Bebidas del Norte",
+    "Ruc": null,
+    "Activo": true
+  },
+  {
+    "ProveedorId": 3,
+    "RazonSocial": "Licorería Distribuidora Norte",
+    "Ruc": null,
+    "Activo": true
+  },
+  {
+    "ProveedorId": 4,
+    "RazonSocial": "Distribuidora de Lácteos y Embutidos",
+    "Ruc": null,
+    "Activo": true
+  },
+  {
+    "ProveedorId": 5,
+    "RazonSocial": "Distribuidora de Snacks y Golosinas",
+    "Ruc": null,
+    "Activo": true
+  },
+  {
+    "ProveedorId": 6,
+    "RazonSocial": "Distribuidora de Limpieza e Higiene",
+    "Ruc": null,
+    "Activo": true
+  },
+  {
+    "ProveedorId": 7,
+    "RazonSocial": "Productores Locales de Cajamarca",
+    "Ruc": null,
+    "Activo": true
+  },
+  {
+    "ProveedorId": 8,
+    "RazonSocial": "Producción propia Kusi",
+    "Ruc": null,
+    "Activo": true
+  }
+]

@@ -60,6 +60,14 @@ namespace SistemaDeGestion_KusiMinimarket2026
             menu.Dock = DockStyle.Fill;
             pnlMenu.Controls.Add(menu);
         }
+        /// <summary>Muestra un UC en el panel principal reemplazando el que haya.</summary>
+        public void MostrarModulo(UserControl modulo)
+        {
+            foreach (Control c in pnlPrincipal.Controls) c.Dispose();
+            pnlPrincipal.Controls.Clear();
+            modulo.Dock = DockStyle.Fill;
+            pnlPrincipal.Controls.Add(modulo);
+        }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {

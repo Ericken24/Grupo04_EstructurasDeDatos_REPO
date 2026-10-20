@@ -1,0 +1,86 @@
+[
+  {
+    "Origen": "SUC-01",
+    "Destino": "ADM-01",
+    "Costo": 1.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-02",
+    "Destino": "ADM-01",
+    "Costo": 2.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-03",
+    "Destino": "ADM-01",
+    "Costo": 2.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-04",
+    "Destino": "ADM-01",
+    "Costo": 3.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-05",
+    "Destino": "ADM-01",
+    "Costo": 3.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-06",
+    "Destino": "ADM-01",
+    "Costo": 1.5,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-07",
+    "Destino": "ADM-01",
+    "Costo": 4.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-01",
+    "Destino": "SUC-02",
+    "Costo": 1.5,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-01",
+    "Destino": "SUC-06",
+    "Costo": 1.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-02",
+    "Destino": "SUC-04",
+    "Costo": 2.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-03",
+    "Destino": "SUC-05",
+    "Costo": 2.5,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-03",
+    "Destino": "SUC-07",
+    "Costo": 1.5,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-04",
+    "Destino": "SUC-07",
+    "Costo": 2.0,
+    "Disponible": true
+  },
+  {
+    "Origen": "SUC-05",
+    "Destino": "SUC-06",
+    "Costo": 2.0,
+    "Disponible": true
+  }
+]

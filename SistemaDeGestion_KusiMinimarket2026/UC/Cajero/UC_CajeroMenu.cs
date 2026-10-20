@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using SistemaDeGestion_KusiMinimarket2026.UC.Cajero;
 
 namespace SistemaDeGestion_KusiMinimarket2026.CajeroRol_UC
 {
@@ -13,6 +7,14 @@ namespace SistemaDeGestion_KusiMinimarket2026.CajeroRol_UC
         public UC_CajeroMenu()
         {
             InitializeComponent();
+            btnPuntoVenta.Click += (s, e) => Abrir(new UC_NuevaVenta());
+            // btnHisotrialVentas.Click += (s, e) => Abrir(new UC_HistorialVentas());      // se activa cuando exista el UC
+            // btnTransEspera.Click     += (s, e) => Abrir(new UC_TransaccionesEspera());  // se activa cuando exista el UC
+        }
+
+        private void Abrir(UserControl modulo)
+        {
+            if (FindForm() is FrmPrincipal principal) principal.MostrarModulo(modulo);
         }
     }
 }

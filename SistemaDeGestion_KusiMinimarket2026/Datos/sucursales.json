@@ -1,0 +1,66 @@
+[
+  {
+    "SucursalId": 1,
+    "Codigo": "SUC-01",
+    "Nombre": "Kusi Centro",
+    "Tipo": "TIENDA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  },
+  {
+    "SucursalId": 2,
+    "Codigo": "SUC-02",
+    "Nombre": "Kusi Norte",
+    "Tipo": "TIENDA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  },
+  {
+    "SucursalId": 3,
+    "Codigo": "SUC-03",
+    "Nombre": "Kusi Sur",
+    "Tipo": "TIENDA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  },
+  {
+    "SucursalId": 4,
+    "Codigo": "SUC-04",
+    "Nombre": "Kusi Este",
+    "Tipo": "TIENDA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  },
+  {
+    "SucursalId": 5,
+    "Codigo": "SUC-05",
+    "Nombre": "Kusi Oeste",
+    "Tipo": "TIENDA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  },
+  {
+    "SucursalId": 6,
+    "Codigo": "SUC-06",
+    "Nombre": "Kusi Mercado",
+    "Tipo": "TIENDA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  },
+  {
+    "SucursalId": 7,
+    "Codigo": "SUC-07",
+    "Nombre": "Kusi Terminal",
+    "Tipo": "TIENDA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  },
+  {
+    "SucursalId": 8,
+    "Codigo": "ADM-01",
+    "Nombre": "Sede administrativa Kusi",
+    "Tipo": "ADMINISTRATIVA",
+    "Distrito": "Cajamarca",
+    "Activa": true
+  }
+]
