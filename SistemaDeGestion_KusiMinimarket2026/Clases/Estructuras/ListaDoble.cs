@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 
 namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
 {
@@ -17,19 +18,20 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
         public bool TieneAnterior => actual?.Anterior != null;
         public bool TieneSiguiente => actual?.Siguiente != null;
 
-        /// <summary>Dato donde está parado el cursor (default si la lista está vacía).</summary>
+        /// Dato donde está parado el cursor (default si la lista está vacía).
         public T? DatoActual => actual != null ? actual.Dato : default;
 
+        // Agrega un nodo al final. Si estaba vacía, el nuevo es cabeza, cola y cursor.
         public void AgregarFinal(T dato)
         {
             NodoDoble<T> nuevo = new NodoDoble<T>(dato);
-            if (cabeza == null)
+            if (cabeza == null)                  
             {
                 cabeza = nuevo;
                 cola = nuevo;
-                actual = nuevo;
+                actual = nuevo;                  
             }
-            else
+            else                                 
             {
                 cola!.Siguiente = nuevo;
                 nuevo.Anterior = cola;
@@ -38,6 +40,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             Cantidad++;
         }
 
+        // Agrega un nodo al inicio. Si estaba vacía, el nuevo es cabeza, cola y cursor.
         public void AgregarInicio(T dato)
         {
             NodoDoble<T> nuevo = new NodoDoble<T>(dato);
@@ -56,6 +59,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             Cantidad++;
         }
 
+        // Mueve el cursor un nodo hacia adelante. Devuelve false si ya no hay siguiente.
         public bool IrSiguiente()
         {
             if (actual?.Siguiente == null) return false;
@@ -63,6 +67,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             return true;
         }
 
+        // Mueve el cursor un nodo hacia atrás. Devuelve false si ya no hay anterior.
         public bool IrAnterior()
         {
             if (actual?.Anterior == null) return false;
@@ -70,20 +75,26 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             return true;
         }
 
-        public void IrAlInicio() => actual = cabeza;
-        public void IrAlFinal() => actual = cola;
+        public void IrAlInicio() => actual = cabeza;   // { actual = cabeza; }
+        public void IrAlFinal() => actual = cola;      // { actual = cola;  }
 
-        /// <summary>Recorre la lista de atrás hacia adelante (útil para mostrar lo más reciente primero).</summary>
+        // Recorre la lista de atrás hacia adelante (útil para mostrar lo más reciente primero).
+        /// Se copian los datos a un List<T>; recorriendo con "Anterior" y se devuelve ese List.
         public IEnumerable<T> RecorrerAlReves()
         {
+            List<T> datos = new List<T>();
             NodoDoble<T>? nodo = cola;
             while (nodo != null)
             {
-                yield return nodo.Dato;
+                datos.Add(nodo.Dato);
                 nodo = nodo.Anterior;
             }
+            return datos;
         }
 
+        /// <summary>
+        /// Construye una ListaDoble a partir de cualquier colección (por ejemplo, un List de LINQ).
+        /// </summary>
         public static ListaDoble<T> Desde(IEnumerable<T> origen)
         {
             ListaDoble<T> lista = new ListaDoble<T>();
@@ -91,16 +102,22 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             return lista;
         }
 
+        /// <summary>
+        /// Permite recorrer la lista con foreach (de la cabeza a la cola).
+        /// Se copian los datos a un List&lt;T&gt; y se devuelve su enumerador.
+        /// </summary>
         public IEnumerator<T> GetEnumerator()
         {
+            List<T> datos = new List<T>();
             NodoDoble<T>? nodo = cabeza;
             while (nodo != null)
             {
-                yield return nodo.Dato;
+                datos.Add(nodo.Dato);
                 nodo = nodo.Siguiente;
             }
+            return datos.GetEnumerator();
         }
 
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();         // devuelve todos los datos de la lista ya ordenados
     }
 }

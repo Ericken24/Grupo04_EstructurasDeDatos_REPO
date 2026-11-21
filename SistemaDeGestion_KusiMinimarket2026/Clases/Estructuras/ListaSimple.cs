@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 
 namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
 {
@@ -8,12 +9,13 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
     /// </summary>
     public class ListaSimple<T> : IEnumerable<T>
     {
-        private Nodo<T>? cabeza;
-        private Nodo<T>? ultimo;     // guardar el último evita recorrer toda la lista al agregar
+        private Nodo<T>? cabeza;  
+        private Nodo<T>? ultimo;
         public int Cantidad { get; private set; }
 
-        public bool EstaVacia => cabeza == null;
+        public bool EstaVacia => cabeza == null;   // if (cabeza == null) { return true; } else { return false; }
 
+        // Agrega un nodo al inicio. El nuevo pasa a ser la cabeza y apunta a la cabeza anterior.
         public void AgregarInicio(T dato)
         {
             Nodo<T> nuevo = new Nodo<T>(dato);
@@ -23,6 +25,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             Cantidad++;
         }
 
+        // Agrega un nodo al final. El último actual apunta al nuevo y el nuevo pasa a ser el último.
         public void AgregarFinal(T dato)
         {
             Nodo<T> nuevo = new Nodo<T>(dato);
@@ -39,7 +42,9 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             Cantidad++;
         }
 
-        /// <summary>Elimina el primer elemento que cumpla la condición. Devuelve true si lo encontró.</summary>
+        // Elimina el primer elemento que cumpla la condición (Predicate).
+        /// Devuelve true si lo encontró y eliminó; false si no existía.
+        /// Se recorre con dos punteros: "actual" y "anterior".
         public bool Eliminar(Predicate<T> condicion)
         {
             Nodo<T>? actual = cabeza;
@@ -47,22 +52,22 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
 
             while (actual != null)
             {
-                if (condicion(actual.Dato))
+                if (condicion(actual.Dato))   // ¿el dato cumple la condición?
                 {
                     if (anterior == null) cabeza = actual.Siguiente;   // era la cabeza
-                    else anterior.Siguiente = actual.Siguiente;
+                    else anterior.Siguiente = actual.Siguiente;        // estaba en medio o al final
 
                     if (actual == ultimo) ultimo = anterior;           // era el último
                     Cantidad--;
                     return true;
                 }
-                anterior = actual;
-                actual = actual.Siguiente;
+                anterior = actual;              // avanzo "anterior"
+                actual = actual.Siguiente;      // avanzo "actual"
             }
             return false;
         }
 
-        /// <summary>Devuelve el primer elemento que cumpla la condición, o default si no hay.</summary>
+        // Devuelve el primer elemento que cumpla la condición, o default si no hay.
         public T? Buscar(Predicate<T> condicion)
         {
             Nodo<T>? actual = cabeza;
@@ -71,10 +76,10 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
                 if (condicion(actual.Dato)) return actual.Dato;
                 actual = actual.Siguiente;
             }
-            return default;
+            return default;   // para T? = null
         }
 
-        /// <summary>Devuelve una lista nueva solo con los elementos que cumplan la condición.</summary>
+        // Devuelve una lista nueva solo con los elementos que cumplan la condición.
         public ListaSimple<T> Filtrar(Predicate<T> condicion)
         {
             ListaSimple<T> resultado = new ListaSimple<T>();
@@ -87,6 +92,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             return resultado;
         }
 
+        // Borra todos los nodos y deja la lista vacía.
         public void Limpiar()
         {
             cabeza = null;
@@ -94,7 +100,8 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             Cantidad = 0;
         }
 
-        /// <summary>Puente hacia List&lt;T&gt;: para guardar en JSON o llenar un DataGridView/ComboBox.</summary>
+        // Puente hacia List<T>;: para guardar en JSON o llenar un DataGridView/ComboBox. Para usamos el ToList(): convertir los datos en una lista. 
+        // Se apoya en el foreach (que a su vez usa GetEnumerator).
         public List<T> ToList()
         {
             List<T> lista = new List<T>();
@@ -102,7 +109,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             return lista;
         }
 
-        /// <summary>Puente desde List&lt;T&gt;: al cargar un JSON se arma la lista enlazada.</summary>
+        // Puente desde cualquier colección (por ejemplo un List de LINQ): arma la lista enlazada.
         public static ListaSimple<T> Desde(IEnumerable<T> origen)
         {
             ListaSimple<T> lista = new ListaSimple<T>();
@@ -110,16 +117,20 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             return lista;
         }
 
+        // Permite recorrer la lista con foreach (de la cabeza al final).
+        // Se copian los datos a un List<T>; y se devuelve su enumerador.
         public IEnumerator<T> GetEnumerator()
         {
+            List<T> datos = new List<T>();
             Nodo<T>? actual = cabeza;
             while (actual != null)
             {
-                yield return actual.Dato;
+                datos.Add(actual.Dato);
                 actual = actual.Siguiente;
             }
+            return datos.GetEnumerator();
         }
 
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();   // devuelve todos los datos de la lista ya ordenados
     }
 }

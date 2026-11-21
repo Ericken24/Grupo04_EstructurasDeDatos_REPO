@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 
 namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
 {
@@ -10,30 +11,32 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
     public class ListaCircular<T> : IEnumerable<T>
     {
         private Nodo<T>? ultimo;
-        private Nodo<T>? turno;          // nodo al que le toca en la rotación
+        private Nodo<T>? turno;
         public int Cantidad { get; private set; }
 
         public bool EstaVacia => ultimo == null;
 
+
+        // Agrega un nodo al final de la circular.
         public void Agregar(T dato)
         {
             Nodo<T> nuevo = new Nodo<T>(dato);
             if (ultimo == null)
             {
-                nuevo.Siguiente = nuevo;     // se apunta a sí mismo
+                nuevo.Siguiente = nuevo;
                 ultimo = nuevo;
                 turno = nuevo;
             }
             else
             {
-                nuevo.Siguiente = ultimo.Siguiente;   // el nuevo apunta a la cabeza
+                nuevo.Siguiente = ultimo.Siguiente;
                 ultimo.Siguiente = nuevo;
                 ultimo = nuevo;
             }
             Cantidad++;
         }
 
-        /// <summary>Devuelve el elemento del turno y pasa al siguiente. Al llegar al final, vuelve al inicio.</summary>
+        // Devuelve el elemento del turno y pasa al siguiente.
         public T? SiguienteTurno()
         {
             if (turno == null) return default;
@@ -42,18 +45,23 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             return dato;
         }
 
-        /// <summary>Recorre una sola vuelta (se detiene al volver a la cabeza para no entrar en bucle infinito).</summary>
+        // Recorre una sola vuelta (se detiene al volver a la cabeza para no entrar en bucle infinito).
+        // Se copian los datos a un List<T>; con un for de "Cantidad" vueltas.
         public IEnumerator<T> GetEnumerator()
         {
-            if (ultimo == null) yield break;
-            Nodo<T> nodo = ultimo.Siguiente!;
-            for (int i = 0; i < Cantidad; i++)
+            List<T> datos = new List<T>();
+            if (ultimo != null)
             {
-                yield return nodo.Dato;
-                nodo = nodo.Siguiente!;
+                Nodo<T> nodo = ultimo.Siguiente!;
+                for (int i = 0; i < Cantidad; i++)
+                {
+                    datos.Add(nodo.Dato);
+                    nodo = nodo.Siguiente!;
+                }
             }
+            return datos.GetEnumerator();
         }
 
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();         // devuelve todos los datos de la lista ya ordenados
     }
 }
