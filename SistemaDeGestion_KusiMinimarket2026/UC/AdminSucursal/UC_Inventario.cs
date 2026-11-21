@@ -24,6 +24,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
         private ListaSimple<Categoria> categorias = new ListaSimple<Categoria>();
         private ListaSimple<Proveedor> proveedores = new ListaSimple<Proveedor>();
         private ListaSimple<Inventario> stockSucursal = new ListaSimple<Inventario>();
+        private IndiceBusqueda<Producto> indice = new IndiceBusqueda<Producto>();   // ABB: busca por SKU, código de barras o nombre
         private readonly Pila<AjusteStock> ajustes = new Pila<AjusteStock>();
         private bool cargando;
 
@@ -49,6 +50,11 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             productos = ListaSimple<Producto>.Desde(Almacen.Productos.Cargar());
             categorias = ListaSimple<Categoria>.Desde(Almacen.Categorias.Cargar());
             proveedores = ListaSimple<Proveedor>.Desde(Almacen.Proveedores.Cargar());
+
+            // Cada producto se guarda en el índice con su SKU, código de barras y nombre
+            indice = new IndiceBusqueda<Producto>();
+            foreach (Producto p in productos)
+                indice.Agregar(p, new string?[] { p.SKU, p.CodigoBarras, p.Nombre });
 
             cargando = true;
             cmbCategoria.Items.Add("Todas las categorías");
@@ -82,13 +88,15 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             int? seleccionado = (dgvInventario.CurrentRow?.Tag as Producto)?.ProductoId;
             int filaSeleccionada = -1, bajos = 0;
 
+            // Sin texto se recorren todos los productos; con texto, solo los que encuentra el índice (ABB)
+            ListaSimple<Producto> candidatos = productos;
+            if (texto.Length > 0) candidatos = indice.Buscar(texto);
+
             dgvInventario.Rows.Clear();
-            foreach (Producto p in productos)
+            foreach (Producto p in candidatos)
             {
                 if (!p.Activo) continue;
                 if (categoriaId != null && p.CategoriaId != categoriaId) continue;
-                if (texto.Length > 0 && !p.Nombre.Contains(texto, StringComparison.OrdinalIgnoreCase)
-                                     && !p.SKU.Contains(texto, StringComparison.OrdinalIgnoreCase)) continue;
 
                 decimal stock = StockDe(p.ProductoId);
                 string estado = EstadoStock(p, stock);

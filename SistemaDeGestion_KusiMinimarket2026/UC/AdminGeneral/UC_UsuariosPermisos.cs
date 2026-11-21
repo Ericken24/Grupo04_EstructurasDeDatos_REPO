@@ -27,6 +27,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
 
         private static readonly ListaSimple<Modulo> catalogo = CrearCatalogo();
         private readonly ListaSimple<Usuario> usuarios = CrearUsuarios();
+        private IndiceBusqueda<Usuario> indice = new IndiceBusqueda<Usuario>();   // ABB: busca por nombre completo o nombre de usuario
         private bool listo;   // evita cargar datos mientras se arma la pantalla
 
         public UC_UsuariosPermisos()
@@ -38,6 +39,9 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
         {
             if (DesignMode) return;
             if (!ServicioAdminGeneral.Aplicar(this)) return;   // otro rol: no se carga nada
+
+            foreach (Usuario u in usuarios)
+                indice.Agregar(u, new string?[] { u.NombreCompleto, u.NombreUsuario });
 
             cboRol.SelectedIndex = 0;
             listo = true;
@@ -116,11 +120,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
             };
             string texto = txtBuscar.Text.Trim();
 
-            ListaSimple<Usuario> filtrados = usuarios.Filtrar(u =>
-                (rolFiltro == null || RolEfectivo(u.Rol) == rolFiltro) &&
-                (texto.Length == 0 ||
-                    u.NombreCompleto.Contains(texto, StringComparison.OrdinalIgnoreCase) ||
-                    u.NombreUsuario.Contains(texto, StringComparison.OrdinalIgnoreCase)));
+            // Sin texto se usan todos los usuarios; con texto, el índice (ABB) devuelve los que coinciden
+            ListaSimple<Usuario> candidatos = usuarios;
+            if (texto.Length > 0) candidatos = indice.Buscar(texto);
+
+            ListaSimple<Usuario> filtrados = candidatos.Filtrar(u =>
+                rolFiltro == null || RolEfectivo(u.Rol) == rolFiltro);
 
             dgvUsuarios.Rows.Clear();
             foreach (Usuario u in filtrados)

@@ -14,6 +14,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
     {
         private ListaSimple<Producto> catalogo = new ListaSimple<Producto>();
         private ListaSimple<Inventario> inventario = new ListaSimple<Inventario>();
+        private IndiceBusqueda<Producto> indice = new IndiceBusqueda<Producto>();   // ABB: busca por SKU, código de barras o nombre
         private readonly ListaSimple<DetalleVenta> carrito = new ListaSimple<DetalleVenta>();
         private readonly Pila<DetalleVenta> productosAgregados = new Pila<DetalleVenta>();   // para "Deshacer último"
         private Usuario? cajero;
@@ -37,11 +38,20 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
         private void CargarDatos()
         {
             catalogo = ListaSimple<Producto>.Desde(Almacen.Productos.Cargar().Where(p => p.Activo));
+            ArmarIndice();
             RecargarInventario();
 
             cboMetodoPago.DataSource = Almacen.MetodosPago.Cargar();   // el ComboBox muestra MetodoPago.ToString() = Nombre
             RefrescarCatalogo();
             RefrescarCarrito();
+        }
+
+        /// <summary>Cada producto se guarda en el índice con su SKU, código de barras y nombre.</summary>
+        private void ArmarIndice()
+        {
+            indice = new IndiceBusqueda<Producto>();
+            foreach (Producto p in catalogo)
+                indice.Agregar(p, new string?[] { p.SKU, p.CodigoBarras, p.Nombre });
         }
 
         private void RecargarInventario()
@@ -60,12 +70,10 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
         private void RefrescarCatalogo()
         {
             string filtro = txtBuscar.Text.Trim();
-            ListaSimple<Producto> lista = filtro.Length == 0
-                ? catalogo
-                : catalogo.Filtrar(p =>
-                    p.Nombre.Contains(filtro, StringComparison.OrdinalIgnoreCase) ||
-                    p.SKU.Contains(filtro, StringComparison.OrdinalIgnoreCase) ||
-                    (p.CodigoBarras != null && p.CodigoBarras.Contains(filtro, StringComparison.OrdinalIgnoreCase)));
+
+            // Sin texto se muestra todo el catálogo; con texto, el índice (ABB) devuelve los que coinciden
+            ListaSimple<Producto> lista = catalogo;
+            if (filtro.Length > 0) lista = indice.Buscar(filtro);
 
             dgvProductos.Rows.Clear();
             foreach (Producto p in lista)

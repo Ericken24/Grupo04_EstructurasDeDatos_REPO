@@ -7,12 +7,19 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
     /// <summary>
     /// Auditoría de eventos y sincronización entre sucursales (solo rol Administrador general).
     /// Estructuras: ListaSimple (cargar y filtrar eventos y enlaces),
-    /// ListaCircular (rotar el turno de sincronización entre las sucursales, volviendo al inicio al terminar)
-    /// y Cola (las sucursales sin conectividad esperan su reintento en orden de llegada).
+    /// ListaCircular (rotar el turno de sincronización entre las sucursales, volviendo al inicio al terminar),
+    /// Cola (las sucursales sin conectividad esperan su reintento en orden de llegada),
+    /// Árbol binario de búsqueda (índice del buscador de eventos) y
+    /// Grafo (simula la red de sucursales: Floyd-Warshall busca la ruta más barata hasta la central
+    /// y Prim calcula la red de menor costo; todo con los pesos de enlaces_sync.json).
     /// </summary>
     public partial class UC_AuditoriaSincronizacion : UserControl
     {
         private const int MaximoEventos = 500;
+        private const string CodigoCentral = "ADM-01";                           // sede a la que llegan los datos
+
+        private IndiceBusqueda<Auditoria> indice = new IndiceBusqueda<Auditoria>();   // ABB: busca por acción o detalle
+        private string ultimaRuta = "";                                          // ruta usada en la última sincronización
 
         private ListaCircular<string> rotacion = new ListaCircular<string>();   // códigos de sucursal (Origen) por turnos
         private Cola<string> pendientes = new Cola<string>();                   // sucursales que fallaron y esperan reintento
@@ -28,9 +35,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
             if (DesignMode) return;
             if (!ServicioAdminGeneral.Aplicar(this)) return;   // otro rol: no se carga nada
 
+            // Cada tienda tiene un turno en la rotación (la sede administrativa es el destino, no tiene turno)
             rotacion = new ListaCircular<string>();
-            foreach (EnlaceSync enlace in Almacen.Enlaces.Cargar())
-                rotacion.Agregar(enlace.Origen);
+            foreach (Sucursal sucursal in Almacen.Sucursales.Cargar())
+            {
+                if (sucursal.Tipo == "TIENDA") rotacion.Agregar(sucursal.Codigo);
+            }
 
             listo = true;
             CargarEnlaces();
@@ -55,15 +65,17 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
             string texto = txtBuscar.Text.Trim();
             Dictionary<int, Sucursal> sucursales = Almacen.Sucursales.Cargar().ToDictionary(s => s.SucursalId);
 
-            // ListaSimple: del evento más reciente al más antiguo, filtrado por texto
-            ListaSimple<Auditoria> eventos = ListaSimple<Auditoria>.Desde(
-                Almacen.Auditoria.Cargar().OrderByDescending(a => a.FechaEvento));
-            if (texto.Length > 0)
-            {
-                eventos = eventos.Filtrar(a =>
-                    a.Accion.Contains(texto, StringComparison.OrdinalIgnoreCase) ||
-                    a.Detalle.Contains(texto, StringComparison.OrdinalIgnoreCase));
-            }
+            // El índice se vuelve a armar solo cuando hay eventos nuevos (la auditoría solo agrega eventos)
+            List<Auditoria> registros = Almacen.Auditoria.Cargar();
+            if (registros.Count != indice.Cantidad) ArmarIndice(registros);
+
+            // ListaSimple: sin texto salen todos; con texto, el índice (ABB) devuelve los que coinciden.
+            // En ambos casos se muestra del evento más reciente al más antiguo.
+            ListaSimple<Auditoria> eventos;
+            if (texto.Length == 0)
+                eventos = ListaSimple<Auditoria>.Desde(registros.OrderByDescending(a => a.FechaEvento));
+            else
+                eventos = ListaSimple<Auditoria>.Desde(indice.Buscar(texto).OrderByDescending(a => a.FechaEvento));
 
             dgvAuditoria.Rows.Clear();
             int mostrados = 0;
@@ -85,6 +97,14 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
             lblTotalAuditoria.Text = eventos.Cantidad > MaximoEventos
                 ? $"Eventos: {eventos.Cantidad}  (se muestran los {MaximoEventos} más recientes)"
                 : $"Eventos: {eventos.Cantidad}";
+        }
+
+        /// <summary>Guarda cada evento en el índice con su acción y su detalle.</summary>
+        private void ArmarIndice(List<Auditoria> registros)
+        {
+            indice = new IndiceBusqueda<Auditoria>();
+            foreach (Auditoria evento in registros)
+                indice.Agregar(evento, new string?[] { evento.Accion, evento.Detalle });
         }
 
         // ------------------------------------------------------------ Enlaces
@@ -118,7 +138,13 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
                 }
             }
 
-            lblEstadoSync.Text = $"Enlaces disponibles: {disponibles} de {enlaces.Cantidad}";
+            // Prim: red de menor costo que conecta las sedes a partir de la central (solo con enlaces disponibles)
+            GrafoSucursales grafo = GrafoSucursales.Desde(enlaces);
+            ListaSimple<Arista> redMinima = grafo.CalcularPrim(CodigoCentral);
+            decimal costoRed = 0;
+            foreach (Arista arista in redMinima) costoRed = costoRed + arista.Costo;   // con +=: costoRed += arista.Costo;
+
+            lblEstadoSync.Text = $"Enlaces disponibles: {disponibles} de {enlaces.Cantidad}  ·  Prim: costo {costoRed:0.##} ({redMinima.Cantidad + 1} de {grafo.CantidadNodos} sedes)";
             ActualizarPendientes();
         }
 
@@ -172,8 +198,8 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
             CargarAuditoria();
 
             MessageBox.Show(correcta
-                    ? $"{codigo} se sincronizó correctamente."
-                    : $"{codigo} no tiene conectividad. Quedó en la cola de reintento.",
+                    ? $"{codigo} se sincronizó correctamente.\nRuta: {ultimaRuta}"
+                    : $"{codigo} no tiene ruta hacia la central. Quedó en la cola de reintento.",
                 "Sincronización", MessageBoxButtons.OK, correcta ? MessageBoxIcon.Information : MessageBoxIcon.Warning);
         }
 
@@ -189,27 +215,50 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
             CargarAuditoria();
 
             MessageBox.Show(correcta
-                    ? $"El reintento de {codigo} fue exitoso."
-                    : $"{codigo} sigue sin conectividad. Volvió al final de la cola.",
+                    ? $"El reintento de {codigo} fue exitoso.\nRuta: {ultimaRuta}"
+                    : $"{codigo} sigue sin ruta hacia la central. Volvió al final de la cola.",
                 "Reintento", MessageBoxButtons.OK, correcta ? MessageBoxIcon.Information : MessageBoxIcon.Warning);
         }
 
+        /// <summary>
+        /// Simula el envío de datos de una sucursal a la central.
+        /// Con el grafo se busca la ruta más barata usando solo los enlaces disponibles (Floyd-Warshall):
+        /// si existe, el envío es exitoso; si no hay ninguna ruta, la sucursal entra a la cola de reintento.
+        /// </summary>
         private bool IntentarSincronizar(string codigo, bool esReintento)
         {
-            EnlaceSync? enlace = Almacen.Enlaces.Cargar().FirstOrDefault(x => x.Origen == codigo);
             string tipo = esReintento ? "Reintento" : "Sincronización";
 
-            if (enlace != null && enlace.Disponible)
+            GrafoSucursales grafo = GrafoSucursales.Desde(Almacen.Enlaces.Cargar());
+            grafo.CalcularFloydWarshall();
+            ListaSimple<string> ruta = grafo.ObtenerRuta(codigo, CodigoCentral);
+
+            if (!ruta.EstaVacia)
             {
+                decimal costo = grafo.CostoRuta(codigo, CodigoCentral);
+                ultimaRuta = TextoDeRuta(ruta);
                 ServicioAdminGeneral.RegistrarAuditoria("SYNC_OK",
-                    $"{tipo}: {enlace.Origen} → {enlace.Destino} sincronizado (costo {enlace.Costo:0.##})");
+                    $"{tipo}: {codigo} → {CodigoCentral} por la ruta {ultimaRuta} (costo {costo:0.##})");
                 return true;
             }
 
+            ultimaRuta = "";
             if (!pendientes.Contains(codigo)) pendientes.Encolar(codigo);
             ServicioAdminGeneral.RegistrarAuditoria("SYNC_FALLIDA",
-                $"{tipo}: {codigo} sin conectividad; queda en la cola de reintento");
+                $"{tipo}: {codigo} sin ruta disponible hacia {CodigoCentral}; queda en la cola de reintento");
             return false;
+        }
+
+        /// <summary>Convierte la ruta en un texto como "SUC-04 → SUC-02 → ADM-01".</summary>
+        private static string TextoDeRuta(ListaSimple<string> ruta)
+        {
+            string texto = "";
+            foreach (string codigo in ruta)
+            {
+                if (texto.Length > 0) texto = texto + " → ";
+                texto = texto + codigo;
+            }
+            return texto;
         }
     }
 }

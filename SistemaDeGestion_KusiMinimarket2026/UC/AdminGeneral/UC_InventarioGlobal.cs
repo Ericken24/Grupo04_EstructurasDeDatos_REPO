@@ -106,12 +106,17 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
                 });
             }
 
-            // ...y por último se filtra por categoría, texto y críticos
+            // ...si escribió algo, el índice (ABB) busca por SKU o nombre del producto...
+            if (texto.Length > 0)
+            {
+                IndiceBusqueda<FilaInventario> indice = new IndiceBusqueda<FilaInventario>();
+                foreach (FilaInventario f in filas) indice.Agregar(f, new string?[] { f.Sku, f.Producto });
+                filas = indice.Buscar(texto);
+            }
+
+            // ...y por último se filtra por categoría y críticos
             filas = filas.Filtrar(f =>
                 (categoriaId == 0 || f.CategoriaId == categoriaId) &&
-                (texto.Length == 0 ||
-                    f.Producto.Contains(texto, StringComparison.OrdinalIgnoreCase) ||
-                    f.Sku.Contains(texto, StringComparison.OrdinalIgnoreCase)) &&
                 (!soloCriticos || f.EsCritico));
 
             dgvInventario.Rows.Clear();

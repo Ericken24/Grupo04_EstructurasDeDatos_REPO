@@ -6,10 +6,10 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
     /// Pila (LIFO): el último que entra es el primero que sale.
     /// Se usa para deshacer el último producto agregado al carrito y para revertir la última venta.
     /// </summary>
-    public class Pila<T> : IEnumerable<T>
+    public class Pila<T> : IEnumerable<T> //IEnumerable: permite recorrer la pila con foreach, desde el tope hacia abajo
     {
-        private Nodo<T>? tope;
-        public int Cantidad { get; private set; }
+        private Nodo<T>? tope; // Referencia al nodo que está en el tope de la pila
+        public int Cantidad { get; private set; } // no se puede modificar desde fuera, solo desde dentro de la clase Pila
 
         public bool EstaVacia => tope == null;
 
@@ -21,7 +21,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             Cantidad++;
         }
 
-        public T? Desapilar()
+        public T? Desapilar() // Devuelve el dato del tope y lo elimina de la pila
         {
             if (tope == null) return default;
             T dato = tope.Dato;
@@ -40,7 +40,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
         }
 
         /// <summary>Recorre desde el tope hacia abajo.</summary>
-        public IEnumerator<T> GetEnumerator()
+        public IEnumerator<T> GetEnumerator() // getEnumerator: permite recorrer la pila con foreach, desde el tope hacia abajo
         {
             Nodo<T>? nodo = tope;
             while (nodo != null)

@@ -6,7 +6,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
         public T Dato;
         public Nodo<T>? Siguiente;
 
-        public Nodo(T dato)
+        public Nodo(T dato)                         // constructor de un nodo simple
         {
             Dato = dato;
             Siguiente = null;
@@ -20,7 +20,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
         public NodoDoble<T>? Siguiente;
         public NodoDoble<T>? Anterior;
 
-        public NodoDoble(T dato)
+        public NodoDoble(T dato)                    //constructor de un nodo doble
         {
             Dato = dato;
             Siguiente = null;

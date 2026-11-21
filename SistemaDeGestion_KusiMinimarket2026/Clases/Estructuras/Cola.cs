@@ -43,6 +43,14 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
         /// <summary>Mira quién sigue sin sacarlo.</summary>
         public T? Frente() => frente != null ? frente.Dato : default;
 
+        /// <summary>vacia la cola completa.</summary>
+        public void Limpiar()
+        {
+            frente = null;
+            final = null;
+            Cantidad = 0;
+        }
+
         public static Cola<T> Desde(IEnumerable<T> origen)
         {
             Cola<T> cola = new Cola<T>();

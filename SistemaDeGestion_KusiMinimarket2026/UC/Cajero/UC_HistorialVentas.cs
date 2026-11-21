@@ -48,13 +48,21 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
             int sucursalId = actual.SucursalId!.Value;
             string filtro = txtBuscar.Text.Trim();
 
-            // Solo las ventas de este cajero en su sucursal, de la más reciente a la más antigua
-            IEnumerable<Venta> ventas = Almacen.Ventas.Cargar()
-                .Where(v => v.SucursalId == sucursalId && v.UsuarioId == actual.UsuarioId && v.Estado != "EN_ESPERA")
-                .Where(v => filtro.Length == 0 || v.CodigoOperacion.Contains(filtro, StringComparison.OrdinalIgnoreCase))
-                .OrderByDescending(v => v.FechaVenta);
+            // Solo las ventas de este cajero en su sucursal
+            ListaSimple<Venta> delCajero = ListaSimple<Venta>.Desde(Almacen.Ventas.Cargar()
+                .Where(v => v.SucursalId == sucursalId && v.UsuarioId == actual.UsuarioId && v.Estado != "EN_ESPERA"));
 
-            historial = ListaDoble<Venta>.Desde(ventas);
+            // Si escribió algo, el índice (ABB) busca por código de operación
+            ListaSimple<Venta> encontradas = delCajero;
+            if (filtro.Length > 0)
+            {
+                IndiceBusqueda<Venta> indiceCodigos = new IndiceBusqueda<Venta>();
+                foreach (Venta v in delCajero) indiceCodigos.Agregar(v, new string?[] { v.CodigoOperacion });
+                encontradas = indiceCodigos.Buscar(filtro);
+            }
+
+            // De la más reciente a la más antigua
+            historial = ListaDoble<Venta>.Desde(encontradas.OrderByDescending(v => v.FechaVenta));
 
             sincronizando = true;
             try

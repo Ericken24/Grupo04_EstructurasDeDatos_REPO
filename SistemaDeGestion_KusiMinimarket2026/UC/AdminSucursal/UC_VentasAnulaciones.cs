@@ -61,11 +61,19 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             string estado = cmbEstado.SelectedIndex > 0 ? (string)cmbEstado.SelectedItem! : "";
             string texto = txtBuscar.Text.Trim();
 
-            ListaSimple<Venta> filtradas = ListaSimple<Venta>.Desde(Almacen.Ventas.Cargar())
+            // Primero se filtra por sucursal, fechas y estado...
+            ListaSimple<Venta> delPeriodo = ListaSimple<Venta>.Desde(Almacen.Ventas.Cargar())
                 .Filtrar(v => v.SucursalId == sucursalId && v.FechaVenta >= desde && v.FechaVenta < hasta
-                    && (estado == "" || v.Estado == estado)
-                    && (texto.Length == 0 || v.CodigoOperacion.Contains(texto, StringComparison.OrdinalIgnoreCase)
-                                          || v.NombreCajero.Contains(texto, StringComparison.OrdinalIgnoreCase)));
+                    && (estado == "" || v.Estado == estado));
+
+            // ...y si escribió algo, el índice (ABB) busca por código de operación o nombre del cajero
+            ListaSimple<Venta> filtradas = delPeriodo;
+            if (texto.Length > 0)
+            {
+                IndiceBusqueda<Venta> indice = new IndiceBusqueda<Venta>();
+                foreach (Venta v in delPeriodo) indice.Agregar(v, new string?[] { v.CodigoOperacion, v.NombreCajero });
+                filtradas = indice.Buscar(texto);
+            }
 
             // ListaDoble: queda ordenada de la más reciente a la más antigua; el cursor se mueve con Anterior/Siguiente
             recorrido = ListaDoble<Venta>.Desde(filtradas.ToList().OrderByDescending(v => v.FechaVenta));
