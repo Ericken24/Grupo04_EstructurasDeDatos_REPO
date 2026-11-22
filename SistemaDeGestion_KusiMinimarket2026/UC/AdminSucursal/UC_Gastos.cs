@@ -145,7 +145,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             lblUltimo.Text = cima == null
                 ? "Ningún gasto registrado en esta sesión"
                 : $"Último registrado: {cima.CategoriaGasto} · {Soles(cima.Monto)} (en pila: {recientes.Cantidad})";
-            btnDeshacer.Enabled = cima != null;
+            btnDeshacer.Enabled = true;
         }
 
         private void Auditar(string accion, string detalle)

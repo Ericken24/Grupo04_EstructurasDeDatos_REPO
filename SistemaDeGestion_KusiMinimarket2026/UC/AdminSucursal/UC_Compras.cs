@@ -27,7 +27,17 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             cmbProducto.SelectedIndexChanged += (s, e) => MostrarProducto();
             btnAgregar.Click += (s, e) => AgregarItem();
             btnDeshacerItem.Click += (s, e) => DeshacerItem();
-            btnVaciar.Click += (s, e) => { detalle.Limpiar(); agregados.Limpiar(); RefrescarDetalle(); };
+            btnVaciar.Click += (s, e) =>
+            {
+                if (detalle.EstaVacia)
+                {
+                    Avisar("No hay ítems para vaciar.", MessageBoxIcon.Information);
+                    return;
+                }
+                detalle.Limpiar();
+                agregados.Limpiar();
+                RefrescarDetalle();
+            };
             btnRegistrar.Click += (s, e) => RegistrarCompra();
             btnRecibir.Click += (s, e) => RecibirSiguiente();
             btnAnular.Click += (s, e) => AnularSeleccionada();
@@ -101,8 +111,9 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             }
             lblTotal.Text = "Total: " + Soles(total);
             cmbProveedor.Enabled = detalle.EstaVacia;           // una compra = un solo proveedor
-            btnDeshacerItem.Enabled = !agregados.EstaVacia;
-            btnRegistrar.Enabled = btnVaciar.Enabled = !detalle.EstaVacia;
+            btnDeshacerItem.Enabled = true;
+            btnRegistrar.Enabled = true;
+            btnVaciar.Enabled = true;
         }
 
         private void RegistrarCompra()
@@ -166,7 +177,11 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
         private void RecibirSiguiente()
         {
             Compra? siguiente = colaRecepcion.Frente();           // quien sigue en la cola, sin sacarlo todavía
-            if (siguiente == null) return;
+            if (siguiente == null)
+            {
+                Avisar("No hay compras pendientes de recibir.", MessageBoxIcon.Information);
+                return;
+            }
             if (MessageBox.Show($"¿Recibir la compra {siguiente.CodigoCompra}?\nSu detalle se sumará al stock de la sucursal.",
                 "Recibir compra", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
 

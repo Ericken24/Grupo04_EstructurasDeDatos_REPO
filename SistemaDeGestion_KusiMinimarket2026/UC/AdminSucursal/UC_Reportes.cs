@@ -221,8 +221,8 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
         private void ActualizarPie()
         {
             lblPie.Text = $"Reportes en la pila: {historial.Cantidad}";
-            btnVolver.Enabled = historial.Cantidad > 1;
-            btnExportar.Enabled = filasActuales.Count > 0;
+            btnVolver.Enabled = true;
+            btnExportar.Enabled = true;
         }
 
         // ---------- Exportar ----------

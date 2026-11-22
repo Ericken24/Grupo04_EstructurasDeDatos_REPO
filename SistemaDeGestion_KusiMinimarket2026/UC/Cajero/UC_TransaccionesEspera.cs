@@ -51,8 +51,8 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
                 ? "No hay transacciones en espera."
                 : $"Siguiente en atender: {frente.CodigoOperacion}  -  S/ {frente.Total:N2}";
 
-            btnAtender.Enabled = !cola.EstaVacia;
-            btnDescartar.Enabled = !cola.EstaVacia;
+            btnAtender.Enabled = true;
+            btnDescartar.Enabled = true;
 
             if (dgvCola.Rows.Count > 0)
             {
@@ -93,7 +93,13 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
 
         private void btnAtender_Click(object? sender, EventArgs e)
         {
-            if (cajero == null || cola.EstaVacia) return;
+            if (cajero == null) return;
+            if (cola.EstaVacia)
+            {
+                MessageBox.Show("No hay transacciones en espera para atender.", "Cobro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             if (cboMetodoPago.SelectedItem is not MetodoPago metodo)
             {
@@ -126,7 +132,13 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
 
         private void btnDescartar_Click(object? sender, EventArgs e)
         {
-            if (cajero == null || cola.EstaVacia) return;
+            if (cajero == null) return;
+            if (cola.EstaVacia)
+            {
+                MessageBox.Show("No hay transacciones en espera para descartar.", "Transacciones en espera",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             Venta? frente = cola.Frente();
             if (frente == null) return;

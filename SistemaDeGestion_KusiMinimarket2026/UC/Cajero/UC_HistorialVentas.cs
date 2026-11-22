@@ -21,6 +21,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
         public UC_HistorialVentas()
         {
             InitializeComponent();
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
         }
 
         private void UC_HistorialVentas_Load(object? sender, EventArgs e)
@@ -91,6 +92,16 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
             if (cajero != null) CargarHistorial();
         }
 
+        private void txtBuscar_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter || cajero == null || string.IsNullOrWhiteSpace(txtBuscar.Text)) return;
+
+            e.SuppressKeyPress = true;
+            if (dgvVentas.Rows.Count == 0)
+                MessageBox.Show("No se encontró ninguna venta con ese código.", "Historial de ventas",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         // ------------------------------------------------------------ Cursor de la lista doble
 
         private void SeleccionarFila(int fila)
@@ -124,6 +135,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
 
         private void btnPrimera_Click(object? sender, EventArgs e)
         {
+            if (historial.EstaVacia)
+            {
+                MessageBox.Show("No hay ventas en el historial.", "Historial de ventas",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             historial.IrAlInicio();
             indice = 0;
             SeleccionarFila(indice);
@@ -133,6 +150,11 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
         private void btnAnterior_Click(object? sender, EventArgs e)
         {
             if (historial.IrAnterior()) indice--;
+            else
+            {
+                MessageBox.Show("Ya estás en la venta más reciente.", "Historial de ventas",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             SeleccionarFila(indice);
             MostrarActual();
         }
@@ -140,12 +162,23 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
         private void btnSiguiente_Click(object? sender, EventArgs e)
         {
             if (historial.IrSiguiente()) indice++;
+            else
+            {
+                MessageBox.Show("Ya estás en la venta más antigua.", "Historial de ventas",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             SeleccionarFila(indice);
             MostrarActual();
         }
 
         private void btnUltima_Click(object? sender, EventArgs e)
         {
+            if (historial.EstaVacia)
+            {
+                MessageBox.Show("No hay ventas en el historial.", "Historial de ventas",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             historial.IrAlFinal();
             indice = Math.Max(0, historial.Cantidad - 1);
             SeleccionarFila(indice);
@@ -164,7 +197,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
                 lblCodigo.Text = lblFecha.Text = lblMetodo.Text = lblEstado.Text = "-";
                 lblTotalDetalle.Text = "TOTAL:  S/ 0.00";
                 lblPosicion.Text = "Sin ventas";
-                btnPrimera.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = btnUltima.Enabled = false;
+                btnPrimera.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = btnUltima.Enabled = true;
                 return;
             }
 
@@ -181,8 +214,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
             lblTotalDetalle.Text = $"TOTAL:  S/ {venta.Total:N2}";
             lblPosicion.Text = $"Venta {indice + 1} de {historial.Cantidad}";
 
-            btnPrimera.Enabled = btnAnterior.Enabled = historial.TieneAnterior;
-            btnSiguiente.Enabled = btnUltima.Enabled = historial.TieneSiguiente;
+            btnPrimera.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = btnUltima.Enabled = true;
         }
 
         // ------------------------------------------------------------ Revertir la última venta (Pila)

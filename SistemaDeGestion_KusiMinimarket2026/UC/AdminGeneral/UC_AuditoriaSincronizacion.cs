@@ -28,6 +28,17 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
         public UC_AuditoriaSincronizacion()
         {
             InitializeComponent();
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
+        }
+
+        private void txtBuscar_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter || string.IsNullOrWhiteSpace(txtBuscar.Text)) return;
+
+            e.SuppressKeyPress = true;
+            if (dgvAuditoria.Rows.Count == 0)
+                MessageBox.Show("No se encontró ningún evento de auditoría con ese criterio.", "Auditoría",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void UC_AuditoriaSincronizacion_Load(object? sender, EventArgs e)
@@ -152,7 +163,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
         {
             lblPendientes.Text = $"En cola de reintento: {pendientes.Cantidad}";
             lblSiguientePendiente.Text = $"Siguiente reintento: {pendientes.Frente() ?? "-"}";
-            btnReintentar.Enabled = !pendientes.EstaVacia;
+            btnReintentar.Enabled = true;
         }
 
         /// <summary>Simula una caída o el restablecimiento de la conectividad del enlace elegido.</summary>
@@ -207,7 +218,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
         private void btnReintentar_Click(object? sender, EventArgs e)
         {
             string? codigo = pendientes.Desencolar();
-            if (codigo == null) return;
+            if (codigo == null)
+            {
+                MessageBox.Show("No hay sucursales pendientes para reintentar.", "Reintento",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             bool correcta = IntentarSincronizar(codigo, true);
 

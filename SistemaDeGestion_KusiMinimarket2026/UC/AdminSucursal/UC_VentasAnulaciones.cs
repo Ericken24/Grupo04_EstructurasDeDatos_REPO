@@ -30,6 +30,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             dtpHasta.ValueChanged += (s, e) => Refrescar();
             cmbEstado.SelectedIndexChanged += (s, e) => Refrescar();
             txtBuscar.TextChanged += (s, e) => Refrescar();
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
             dgvVentas.SelectionChanged += (s, e) => { if (!cargando) MostrarVenta(); };
             btnAnterior.Click += (s, e) => Mover(adelante: false);
             btnSiguiente.Click += (s, e) => Mover(adelante: true);
@@ -44,6 +45,15 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
                 Refrescar();
                 ActualizarPie();
             };
+        }
+
+        private void txtBuscar_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter || string.IsNullOrWhiteSpace(txtBuscar.Text)) return;
+
+            e.SuppressKeyPress = true;
+            if (dgvVentas.Rows.Count == 0)
+                Avisar("No se encontró ninguna venta con ese código o cajero.");
         }
 
         private static string Soles(decimal monto) => "S/ " + monto.ToString("N2");
@@ -104,7 +114,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             if (dgvVentas.CurrentRow?.Tag is not Venta v)
             {
                 lblVentaSel.Text = "Seleccione una venta de la tabla";
-                btnAnular.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = false;
+                btnAnular.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = true;
                 return;
             }
 
@@ -114,16 +124,24 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
 
             foreach (DetalleVenta d in v.Detalles) dgvDetalle.Rows.Add(d.Nombre, d.Cantidad, d.PrecioUnitario, d.Descuento, d.Importe);
             lblVentaSel.Text = $"{v.CodigoOperacion} · {v.Estado}\nTotal {Soles(v.Total)} · Cajero: {v.NombreCajero}";
-            btnAnular.Enabled = v.Estado == "PAGADA";
-            btnAnterior.Enabled = recorrido.TieneAnterior;
-            btnSiguiente.Enabled = recorrido.TieneSiguiente;
+            btnAnular.Enabled = true;
+            btnAnterior.Enabled = btnSiguiente.Enabled = true;
         }
 
         private void Mover(bool adelante)
         {
+            if (recorrido.EstaVacia)
+            {
+                Avisar("No hay ventas para recorrer.");
+                return;
+            }
             bool movio = adelante ? recorrido.IrSiguiente() : recorrido.IrAnterior();
             Venta? destino = recorrido.DatoActual;
-            if (!movio || destino == null) return;
+            if (!movio || destino == null)
+            {
+                Avisar(adelante ? "Ya estás en la venta más antigua." : "Ya estás en la venta más reciente.");
+                return;
+            }
             foreach (DataGridViewRow fila in dgvVentas.Rows)
                 if (fila.Tag is Venta v && v.VentaId == destino.VentaId) { dgvVentas.CurrentCell = fila.Cells[0]; break; }
         }
@@ -222,7 +240,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             Cola<Venta> espera = Cola<Venta>.Desde(Almacen.ColaEspera.Cargar().Where(v => v.SucursalId == sucursalId));
             string textoCola = espera.EstaVacia ? "sin transacciones en espera" : $"{espera.Cantidad} en espera, sigue {espera.Frente()!.CodigoOperacion}";
             lblEspera.Text = $"Pila de anulaciones: {anulaciones.Cantidad}\nCola del cajero: {textoCola}";
-            btnRevertir.Enabled = !anulaciones.EstaVacia;
+            btnRevertir.Enabled = true;
         }
 
         private void Auditar(string accion, string detalle)

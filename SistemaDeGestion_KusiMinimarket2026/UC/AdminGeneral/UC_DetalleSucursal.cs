@@ -130,6 +130,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
 
         private void btnPrimera_Click(object? sender, EventArgs e)
         {
+            if (historial.EstaVacia)
+            {
+                MessageBox.Show("No hay ventas para mostrar.", "Detalle de sucursal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             historial.IrAlInicio();
             indice = 0;
             SeleccionarFila(indice);
@@ -138,20 +144,48 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
 
         private void btnAnterior_Click(object? sender, EventArgs e)
         {
+            if (historial.EstaVacia)
+            {
+                MessageBox.Show("No hay ventas para recorrer.", "Detalle de sucursal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             if (historial.IrAnterior()) indice--;
+            else
+            {
+                MessageBox.Show("Ya estás en la venta más reciente.", "Detalle de sucursal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             SeleccionarFila(indice);
             MostrarActual();
         }
 
         private void btnSiguiente_Click(object? sender, EventArgs e)
         {
+            if (historial.EstaVacia)
+            {
+                MessageBox.Show("No hay ventas para recorrer.", "Detalle de sucursal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             if (historial.IrSiguiente()) indice++;
+            else
+            {
+                MessageBox.Show("Ya estás en la venta más antigua.", "Detalle de sucursal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             SeleccionarFila(indice);
             MostrarActual();
         }
 
         private void btnUltima_Click(object? sender, EventArgs e)
         {
+            if (historial.EstaVacia)
+            {
+                MessageBox.Show("No hay ventas para mostrar.", "Detalle de sucursal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             historial.IrAlFinal();
             indice = Math.Max(0, historial.Cantidad - 1);
             SeleccionarFila(indice);
@@ -171,7 +205,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
                 lblEstado.ForeColor = Color.Black;
                 lblTotalDetalle.Text = "TOTAL:  S/ 0.00";
                 lblPosicion.Text = "Sin ventas";
-                btnPrimera.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = btnUltima.Enabled = false;
+                btnPrimera.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = btnUltima.Enabled = true;
                 return;
             }
 
@@ -188,8 +222,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminGeneral
             lblTotalDetalle.Text = $"TOTAL:  S/ {venta.Total:N2}";
             lblPosicion.Text = $"Venta {indice + 1} de {historial.Cantidad}";
 
-            btnPrimera.Enabled = btnAnterior.Enabled = historial.TieneAnterior;
-            btnSiguiente.Enabled = btnUltima.Enabled = historial.TieneSiguiente;
+            btnPrimera.Enabled = btnAnterior.Enabled = btnSiguiente.Enabled = btnUltima.Enabled = true;
         }
     }
 }

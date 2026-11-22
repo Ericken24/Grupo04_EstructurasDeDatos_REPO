@@ -22,6 +22,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
         public UC_NuevaVenta()
         {
             InitializeComponent();
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
         }
 
         private void UC_NuevaVenta_Load(object? sender, EventArgs e)
@@ -93,6 +94,16 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
             if (cajero != null) RefrescarCatalogo();
         }
 
+        private void txtBuscar_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter || cajero == null || string.IsNullOrWhiteSpace(txtBuscar.Text)) return;
+
+            e.SuppressKeyPress = true;
+            if (dgvProductos.Rows.Count == 0)
+                MessageBox.Show("No se encontró ningún producto con ese criterio.", "Catálogo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         // ------------------------------------------------------------ Carrito
 
         private void RefrescarCarrito()
@@ -106,10 +117,10 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
                 total += d.Importe;
             }
             lblTotal.Text = $"TOTAL:  S/ {total:N2}";
-            btnCobrar.Enabled = !carrito.EstaVacia;
-            btnEnEspera.Enabled = !carrito.EstaVacia;
-            btnDeshacer.Enabled = !productosAgregados.EstaVacia;
-            btnVaciar.Enabled = !carrito.EstaVacia;
+            btnCobrar.Enabled = true;
+            btnEnEspera.Enabled = true;
+            btnDeshacer.Enabled = true;
+            btnVaciar.Enabled = true;
         }
 
         private void AgregarSeleccionado()
@@ -175,7 +186,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
         private void btnDeshacer_Click(object? sender, EventArgs e)
         {
             DetalleVenta? ultimo = productosAgregados.Desapilar();
-            if (ultimo == null) return;
+            if (ultimo == null)
+            {
+                MessageBox.Show("No hay productos para deshacer.", "Punto de venta",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             int productoId = ultimo.ProductoId;
             decimal cantidad = ultimo.Cantidad;
@@ -190,7 +206,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
 
         private void btnVaciar_Click(object? sender, EventArgs e)
         {
-            if (carrito.EstaVacia) return;
+            if (carrito.EstaVacia)
+            {
+                MessageBox.Show("No hay productos en el carrito para vaciar.", "Punto de venta",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             if (MessageBox.Show("¿Vaciar todo el carrito?", "Punto de venta",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
             LimpiarVenta();
@@ -216,7 +237,13 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
 
         private void btnCobrar_Click(object? sender, EventArgs e)
         {
-            if (cajero == null || carrito.EstaVacia) return;
+            if (cajero == null) return;
+            if (carrito.EstaVacia)
+            {
+                MessageBox.Show("No hay productos en el carrito para cobrar.", "Cobro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             if (cboMetodoPago.SelectedItem is not MetodoPago metodo)
             {
@@ -254,7 +281,13 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.Cajero
 
         private void btnEnEspera_Click(object? sender, EventArgs e)
         {
-            if (cajero == null || carrito.EstaVacia) return;
+            if (cajero == null) return;
+            if (carrito.EstaVacia)
+            {
+                MessageBox.Show("No hay productos en el carrito para enviar a espera.", "Venta en espera",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             Venta venta = ServicioCajero.ArmarVenta(cajero, carrito);
             ServicioCajero.EncolarEnEspera(venta, cajero);   // entra al final de la Cola (FIFO)

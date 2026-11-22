@@ -41,12 +41,12 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
         {
             NodoArbol<T>? nodo = BuscarNodo(raiz, clave);
             return nodo != null ? nodo.Datos : new ListaSimple<T>();                        // if (nodo != null) return nodo.Datos;
-                                                                                            //  else return new ListaSimple<T>();
+                                                                                            // else return new ListaSimple<T>();
         }
 
         private NodoArbol<T>? BuscarNodo(NodoArbol<T>? nodo, string clave)
         {
-            if (nodo == null) return null;                                                  // llegó a un lugar vacío: no existe
+            if (nodo == null) return null;
             int comparacion = string.CompareOrdinal(clave, nodo.Clave);
             if (comparacion == 0) return nodo;                                              // se encontró la clave
             if (comparacion < 0) return BuscarNodo(nodo.Izquierdo, clave);
@@ -131,7 +131,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
         private NodoArbol<T> MenorDe(NodoArbol<T> nodo)
         {
             if (nodo.Izquierdo == null) return nodo;
-            return MenorDe(nodo.Izquierdo);                                             // Con while: while (nodo.Izquierdo != null) nodo = nodo.Izquierdo;  return nodo;
+            return MenorDe(nodo.Izquierdo);                                             // while (nodo.Izquierdo != null) nodo = nodo.Izquierdo;  return nodo;
         }
         // recorrido (recursivo) para obtener todas las claves o todos los datos del árbol, en preorden, inorden o postorden
         /// <summary>Preorden: primero la raíz, luego la izquierda y luego la derecha.</summary>
@@ -209,8 +209,8 @@ namespace SistemaDeGestion_KusiMinimarket2026.Clases.Estructuras
             if (nodo == null) return 0;
             int alturaIzquierda = AlturaEn(nodo.Izquierdo);
             int alturaDerecha = AlturaEn(nodo.Derecho);
-            return Math.Max(alturaIzquierda, alturaDerecha) + 1;                        // Con if: if (alturaIzquierda > alturaDerecha) return alturaIzquierda + 1;
-                                                                                        //         else return alturaDerecha + 1;
+            return Math.Max(alturaIzquierda, alturaDerecha) + 1;                        // if (alturaIzquierda > alturaDerecha) return alturaIzquierda + 1;
+                                                                                        // else return alturaDerecha + 1;
         }
 
         public void Limpiar()

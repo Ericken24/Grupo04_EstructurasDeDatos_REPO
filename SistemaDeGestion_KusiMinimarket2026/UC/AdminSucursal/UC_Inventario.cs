@@ -31,6 +31,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
         public UC_Inventario()
         {
             InitializeComponent();
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
             txtBuscar.TextChanged += (s, e) => Refrescar();
             cmbCategoria.SelectedIndexChanged += (s, e) => Refrescar();
             chkSoloBajo.CheckedChanged += (s, e) => Refrescar();
@@ -39,6 +40,15 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             btnAplicar.Click += (s, e) => AplicarAjuste();
             btnDeshacer.Click += (s, e) => DeshacerAjuste();
             Load += (s, e) => { if (!DesignMode) Iniciar(); };
+        }
+
+        private void txtBuscar_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter || string.IsNullOrWhiteSpace(txtBuscar.Text)) return;
+
+            e.SuppressKeyPress = true;
+            if (dgvInventario.Rows.Count == 0)
+                Avisar("No se encontró ningún producto con ese criterio.");
         }
 
         private static void Avisar(string mensaje, MessageBoxIcon icono = MessageBoxIcon.Information)
@@ -183,7 +193,7 @@ namespace SistemaDeGestion_KusiMinimarket2026.UC.AdminSucursal
             lblPila.Text = cima == null
                 ? "Ajustes en pila: 0"
                 : $"Ajustes en pila: {ajustes.Cantidad} · último: {cima.Nombre} ({cima.Anterior:0.##} -> {cima.Nuevo:0.##})";
-            btnDeshacer.Enabled = cima != null;
+            btnDeshacer.Enabled = true;
         }
 
         private void Auditar(string accion, string detalle)
